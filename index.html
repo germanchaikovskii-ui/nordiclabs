@@ -11,6 +11,35 @@
     .content { position: relative; z-index: 2; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: white; padding: 24px; }
     h1 { font-size: clamp(48px, 9vw, 96px); margin: 0; letter-spacing: -0.06em; }
     p { max-width: 720px; font-size: clamp(18px, 2.2vw, 26px); line-height: 1.45; opacity: .9; margin: 24px 0 0; }
+    .product-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 40px;
+    }
+
+    .product-links .esiva-link {
+      margin-top: 0;
+    }
+
+    .arc-link {
+      background: rgba(8,12,35,.28);
+      border-color: rgba(156,121,255,.28);
+    }
+
+    .arc-link img {
+      width: 50px;
+      height: 34px;
+      object-fit: contain;
+      transform: scale(1.18);
+    }
+
+    .arc-link:hover {
+      background: rgba(95,70,180,.22);
+      border-color: rgba(156,121,255,.44);
+    }
+
     .esiva-link {
       display: inline-flex;
       align-items: center;
@@ -68,14 +97,28 @@
   <main class="content">
     <h1>Nordic Labs</h1>
     <p>Building AI-powered health and fitness technologies for intelligent, personalized digital products.</p>
-    <a
-      class="esiva-link"
-      href="https://esiva.app"
-      aria-label="Visit the ESIVA website"
-    >
-      <img src="assets/esiva-logo.png" alt="">
-      <span>Explore ESIVA <span aria-hidden="true">↗</span></span>
-    </a>
+    <div class="product-links">
+      <a
+        class="esiva-link"
+        href="https://esiva.app"
+        aria-label="Visit the ESIVA website"
+      >
+        <img src="assets/esiva-logo.png" alt="">
+        <span>Explore ESIVA <span aria-hidden="true">↗</span></span>
+      </a>
+
+      <a
+        class="esiva-link arc-link"
+        href="/arc-engine/"
+        aria-label="Learn about ARC Engine"
+      >
+        <img
+          src="assets/arc-engine/arc-engine-logo.png"
+          alt=""
+        >
+        <span>ARC Engine <span aria-hidden="true">↗</span></span>
+      </a>
+    </div>
   </main>
 </body>
 </html>
