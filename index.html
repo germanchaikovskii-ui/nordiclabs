@@ -1,124 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nordic Labs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#000000">
+
+  <title>Coming Soon</title>
+
+  <link rel="icon" href="data:,">
+
   <style>
-    html, body { margin: 0; height: 100%; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #020617; }
-    video { position: fixed; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-    .overlay { position: fixed; inset: 0; background: linear-gradient(rgba(2,6,23,.45), rgba(2,6,23,.65)); }
-    .content { position: relative; z-index: 2; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: white; padding: 24px; }
-    h1 { font-size: clamp(48px, 9vw, 96px); margin: 0; letter-spacing: -0.06em; }
-    p { max-width: 720px; font-size: clamp(18px, 2.2vw, 26px); line-height: 1.45; opacity: .9; margin: 24px 0 0; }
-    .product-links {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      margin-top: 40px;
+    html,
+    body {
+      min-height: 100%;
+      margin: 0;
+      background: #000000;
     }
 
-    .product-links .esiva-link {
-      margin-top: 0;
+    body {
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: #ffffff;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
     }
 
-    .arc-link {
-      background: rgba(8,12,35,.28);
-      border-color: rgba(156,121,255,.28);
-    }
-
-    .arc-link img {
-      width: 50px;
-      height: 34px;
-      object-fit: contain;
-      transform: scale(1.18);
-    }
-
-    .arc-link:hover {
-      background: rgba(95,70,180,.22);
-      border-color: rgba(156,121,255,.44);
-    }
-
-    .esiva-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      margin-top: 40px;
-      padding: 10px 16px 10px 10px;
-      border: 1px solid rgba(255,255,255,.22);
-      border-radius: 999px;
-      color: #fff;
-      background: rgba(255,255,255,.08);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      text-decoration: none;
-      font-size: 14px;
-      letter-spacing: .10em;
-      text-transform: uppercase;
-      transition:
-        transform .2s ease,
-        background .2s ease,
-        border-color .2s ease;
-    }
-
-    .esiva-link:hover {
-      transform: translateY(-1px);
-      background: rgba(255,255,255,.13);
-      border-color: rgba(255,255,255,.34);
-    }
-
-    .esiva-link:focus-visible {
-      outline: 2px solid rgba(255,255,255,.9);
-      outline-offset: 4px;
-    }
-
-    .esiva-link img {
-      width: 34px;
-      height: 34px;
-      object-fit: contain;
-      flex: 0 0 auto;
-    }
-
-    .esiva-link span {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+    p {
+      max-width: 1000px;
+      margin: 0;
+      font-size: clamp(28px, 4.5vw, 64px);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: -0.035em;
     }
   </style>
 </head>
+
 <body>
-  <video autoplay muted loop playsinline>
-    <source src="assets/nordiclabs-loop.mp4" type="video/mp4" />
-  </video>
-
-  <div class="overlay"></div>
-
-  <main class="content">
-    <h1>Nordic Labs</h1>
-    <p>Building AI-powered health and fitness technologies for intelligent, personalized digital products.</p>
-    <div class="product-links">
-      <a
-        class="esiva-link"
-        href="https://esiva.app"
-        aria-label="Visit the ESIVA website"
-      >
-        <img src="assets/esiva-logo.png" alt="">
-        <span>Explore ESIVA <span aria-hidden="true">↗</span></span>
-      </a>
-
-      <a
-        class="esiva-link arc-link"
-        href="/arc-engine/"
-        aria-label="Learn about ARC Engine"
-      >
-        <img
-          src="assets/arc-engine/arc-engine-logo.png"
-          alt=""
-        >
-        <span>ARC Engine <span aria-hidden="true">↗</span></span>
-      </a>
-    </div>
-  </main>
+  <p>
+    Website content is under development,<br>
+    coming soon.
+  </p>
 </body>
 </html>
