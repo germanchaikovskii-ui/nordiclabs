@@ -10,7 +10,7 @@ From the repository root (not from this folder):
 python3 -m http.server 8080 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:8080/website/ and navigate from there. Stop the server with Ctrl-C. No installation or build is needed. Opening `website/index.html` directly also works, but an HTTP preview is recommended.
+Open http://127.0.0.1:8080/website/ and navigate from there. Stop the server with Ctrl-C. No installation or build is needed. Use the HTTP preview so directory routes resolve correctly.
 
 Routes:
 
