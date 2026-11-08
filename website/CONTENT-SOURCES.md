@@ -21,3 +21,11 @@ Before construction licensing, commencement criteria and acceptance/accounting i
 The owner explicitly supplied `info@nordiclabs.tech` in this conversation. The previous development page used `hello@nordiclabs.tech`. Searches of preserved main, available HTML Git history and public search did not independently confirm the info address; the new contact therefore relies on the owner’s correction. Mailto syntax and rendered targets were checked; no email was sent and mailbox delivery was not tested.
 
 The offer invites discussion of available reference solutions and a demonstration pilot. No-cost development is conditional on scope and terms agreed after discussion; it is not a universal free-pilot promise.
+
+## Conventional Industry page
+
+Added 2026-11-08 in response to the owner’s request for a conventional-industry counterpart to Nuclear. The page is a proposed service description for civilian manufacturing facilities: new-build projects, projects already in delivery and operating plants. It reuses the established lifecycle interaction without transferring nuclear licensing, PSAR/FSAR, IAEA-specific claims or nuclear imagery.
+
+Six areas cover baseline assessment, engineering review, procurement/delivery, construction/handover, operating-production support and modernization. Three entry links let visitors start at their current stage; the sequence is explicitly non-mandatory. Integration with existing ERP, maintenance, production-data and scheduling systems is conditional on assessed interfaces and agreed scope. No efficiency figures, autonomous plant-control claims, guarantees or customer case studies were invented.
+
+The contact and conditional demonstration offer follow the user’s approved Nuclear-page wording: info@nordiclabs.tech, available reference solutions, and potential no-cost pilot development subject to agreed scope and terms. New imagery and complete prompts are recorded in assets/conventional/SOURCES.md.

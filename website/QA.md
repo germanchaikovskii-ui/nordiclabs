@@ -71,3 +71,15 @@ Checked the final implementation against each steering message, not just the las
 | info@nordiclabs.tech | Visible address and both mailto targets use the owner-specified address; independent mailbox verification remains unperformed. |
 | Existing visual/branding requirements retained | Nordic Labs Tech Oy branding, larger text, illustrated scrolling scenes, diagonal homepage/gateway and unchanged ESIVA link. |
 | Isolation and preservation | Only development website files changed; main, public maintenance documents, CNAME and original research/media assets remain preserved. |
+
+## Conventional Industry — full page
+
+Replaced the placeholder with a full English industrial page: hero, three entry points, six illustrated lifecycle chapters, connected-record chain, specialist agents, owner benefits, controlled integration and a conditional pilot CTA. Entry points explicitly cover a new facility, an ongoing project and an operating production plant. The stages are not presented as a mandatory sequence. Six new illustrations are stored under assets/conventional; source prompts are documented in that directory. The established lifecycle CSS/JS and shared navigation are reused without modification.
+
+Browser checks at 1440×900, 1024×768, 390×844 and 320×740 found no horizontal page overflow, missing images or clipped text in any of the six chapters. Visually inspected desktop hero, entry cards and operating-production scene, plus mobile hero and contact offer. All desktop scenes fit the pinned viewport. The operating-production chapter showed two tasks fully revealed, a third partially revealed and the fourth unrevealed, with its scene pinned below the header/navigation.
+
+Activated Industrial gateway → Conventional. Keyboard focus on the operating-plant entry card has a 3px outline; Enter navigates directly to #operations and its active navigation item updates. Show all tasks exposes all 24 tasks. Mobile menu opens/closes. Contact links address info@nordiclabs.tech with a Conventional-specific subject. The contact background resolves to the new conventional campus image. Browser console returned no warnings/errors. Existing reduced-motion, short-screen and no-JavaScript fallbacks were preserved and reviewed.
+
+Static checks passed for unique IDs, all local targets and six chapter anchors; no nuclear/PSAR/FSAR/IAEA/licensing language remains in the page copy. The no-cost pilot offer is conditional on agreed scope and terms, and wider implementation follows evaluation. Nuclear HTML and shared CSS/JS are unchanged. Every originally tracked maintenance/asset file matches temporary-maintenance; live /, /arc-engine/ and /404.html remain on maintenance.
+
+Files: industrial/conventional/index.html, assets/conventional-page.css, six assets/conventional/*.webp images, assets/conventional/SOURCES.md, CONTENT-SOURCES.md and QA.md.
