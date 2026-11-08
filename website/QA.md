@@ -83,3 +83,15 @@ Activated Industrial gateway → Conventional. Keyboard focus on the operating-p
 Static checks passed for unique IDs, all local targets and six chapter anchors; no nuclear/PSAR/FSAR/IAEA/licensing language remains in the page copy. The no-cost pilot offer is conditional on agreed scope and terms, and wider implementation follows evaluation. Nuclear HTML and shared CSS/JS are unchanged. Every originally tracked maintenance/asset file matches temporary-maintenance; live /, /arc-engine/ and /404.html remain on maintenance.
 
 Files: industrial/conventional/index.html, assets/conventional-page.css, six assets/conventional/*.webp images, assets/conventional/SOURCES.md, CONTENT-SOURCES.md and QA.md.
+
+## Robotics AI — 2026-11-08
+
+- Replaced the Robotics placeholder with six illustrated chapters and 24 concrete tasks: mission planning, multi-robot integration, construction overview, requirement-based inspection, operating inspections/maintenance, reporting/schedules. Shared lifecycle CSS/JS reused unchanged.
+- Homepage Robotics panel opens the completed page and now says Explore Robotics. Nuclear, Conventional, the industrial gateway, original assets, and ESIVA destination remain unchanged.
+- Browser checked at 1440×900, 1024×768, 390×844 and 320×740: no horizontal overflow; no clipped content. All six chapters fit the desktop pinned scene. Mobile chapters use the existing natural-flow fallback.
+- Verified scroll reveals: construction tasks progressed from all hidden to sequentially visible; active navigation updated. Show-all mode exposed all 24 tasks. Reduced-motion/no-JavaScript fallbacks retained from the shared implementation (code reviewed, preference not emulated).
+- Keyboard Tab showed a 3px visible focus ring; Enter followed a starting-point card to the correct chapter. Mobile menu opened and closed. Contact links target info@nordiclabs.tech with Robotics AI pilot subject; no message sent.
+- Six local WebP illustrations, 1672×941, approximately 152–294 KB each. Exact prompts and original locations in assets/robotics/SOURCES.md. No reference screenshot embedded.
+- Static validation: unique IDs; all page-local links, assets and fragments resolve; six chapter sections; no remaining homepage development label. Browser error/warning log empty. git diff --check passed.
+- Every original file in the temporary-maintenance tree matches its recorded Git blob. Live /, /arc-engine/ and /404.html still display maintenance. No Pages settings or publishing actions performed.
+- Screenshots retained in the working folder qa/: robotics-desktop.jpg, robotics-fleet-desktop.jpg, robotics-mobile.jpg.

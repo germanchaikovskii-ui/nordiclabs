@@ -16,9 +16,9 @@ Routes:
 
 - `/website/` — three image-backed business areas
 - `/website/industrial/` — Nuclear / Conventional gateway
-- `/website/industrial/nuclear/` — six-stage lifecycle and deployment concept
-- `/website/industrial/conventional/` — explicit placeholder
-- `/website/robotics/` — explicit placeholder
+- `/website/industrial/nuclear/` — seven-stage lifecycle, licensing milestones and deployment concept
+- `/website/industrial/conventional/` — industrial lifecycle support for new projects and operating production
+- `/website/robotics/` — connected robotics, inspection, site progress and maintenance workflows
 - `/website/arc-engine/` — preserved research content adapted for local navigation
 - Health AI uses `https://esiva.app`, recovered from the existing main page
 

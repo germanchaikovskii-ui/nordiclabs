@@ -29,3 +29,10 @@ Added 2026-11-08 in response to the owner’s request for a conventional-industr
 Six areas cover baseline assessment, engineering review, procurement/delivery, construction/handover, operating-production support and modernization. Three entry links let visitors start at their current stage; the sequence is explicitly non-mandatory. Integration with existing ERP, maintenance, production-data and scheduling systems is conditional on assessed interfaces and agreed scope. No efficiency figures, autonomous plant-control claims, guarantees or customer case studies were invented.
 
 The contact and conditional demonstration offer follow the user’s approved Nuclear-page wording: info@nordiclabs.tech, available reference solutions, and potential no-cost pilot development subject to agreed scope and terms. New imagery and complete prompts are recorded in assets/conventional/SOURCES.md.
+
+
+## Robotics AI — 2026-11-08
+
+Based on the owner's requested integrated AI service for drones, quadrupeds, humanoids and selected manipulators: construction monitoring, requirement-linked inspections, operational inspection intervals, maintenance/replacement follow-up, reports and Oracle Primavera coordination. This describes a proposed scoped integration service, not an existing universal robotics product. Available interfaces, platform capabilities and site conditions must be assessed. Physical maintenance is separately scoped; inspection findings feed authorized maintenance and acceptance decisions. AI-generated progress proposals are distinct from approved schedule updates. No numerical performance, autonomous acceptance or vendor interoperability guarantees are made.
+
+Contact: owner-specified `info@nordiclabs.tech`. A no-cost demonstration is conditional on agreed scope and terms following discussions. New original conceptual illustrations and exact prompts: `assets/robotics/SOURCES.md`. Shared lifecycle behavior is reused without changing the Nuclear or Conventional pages.
