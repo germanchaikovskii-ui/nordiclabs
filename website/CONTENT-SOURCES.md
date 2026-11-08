@@ -57,3 +57,8 @@ Owner clarified that Health AI explains the general ARC Engine/API principles, w
 Business ID corrected and explicitly confirmed by the owner as 3668654-2. Email-draft contact workflow explicitly selected by the owner; recipient remains info@nordiclabs.tech. Original Nordic Labs logo located in local SLUSH materials, copied without alteration, and framed using SVG for the header emblem and favicon; provenance in assets/brand/SOURCE.md. The historical repository contained only a Nordic Labs text heading, not this standalone emblem.
 
 Nuclear diagram now connects the plant supplier/contractors, six specialized AI agents within an owner-controlled knowledge environment, and owner engineers. Nordic Labs lifecycle support includes configuration, agent-workflow training, validation and maintenance against approved project knowledge. Structured knowledge remains independent of the AI model; no continuous foundation-model training or autonomous approval is promised.
+
+
+## Diagram and CTA refinement — 2026-11-08
+
+The four architecture maps illustrate the owner's existing service descriptions with live HTML/SVG, not new product claims or deployed interfaces. Nuclear knowledge remains independent of models; engineering approvals remain human. Conventional integrations are scoped, robotic findings require authorized review, and Health observations preserve context and uncertainty. The three pilot offers remain conditional on agreed scope/terms. New Health backgrounds are original generated concept illustrations, documented in assets/health/SOURCES.md.
