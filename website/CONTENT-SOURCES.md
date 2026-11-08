@@ -45,3 +45,8 @@ Positioning supplied by the owner: Nordic Labs Tech Oy’s Adaptive Response Cor
 API data flows, access scoping and partner boundaries describe the proposed integration approach, not verified production endpoints or a public API specification. No endpoint names, third-party integrations, certifications, clinical outcomes or universal medical claims are invented. No live user data is collected or transmitted by this static marketing page.
 
 ESIVA URL `https://esiva.app` recovered from original repository links and retained exactly. The web retrieval tool could not access the live website. Browser navigation subsequently confirmed the URL opens successfully and currently displays Coming Soon; no additional product claims were taken from it. Original ARC Engine and ESIVA logo assets reused. Image provenance/prompts: `assets/health/SOURCES.md`.
+
+
+### Health AI scope refinement — 2026-11-08
+
+Owner clarified that Health AI explains the general ARC Engine/API principles, while ESIVA’s product presentation belongs on its separate website. Removed product-specific input examples and metabolic-pilot discussion; retained contextual analysis, feedback, model-independent history and scoped organizational integration. Replaced the large ESIVA product block with a brief closing link. Removed the hero ESIVA promotion; the hero now points to API integration. Existing research materials and original brand assets are preserved.

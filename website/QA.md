@@ -105,3 +105,7 @@ Files: industrial/conventional/index.html, assets/conventional-page.css, six ass
 - Home panel, ESIVA CTA and ARC research link exercised in the browser. ESIVA currently displays Coming Soon, not a product demo; the destination URL is correct. No messages or data submitted. Browser warning/error log empty.
 - Static checks across all website HTML: unique IDs and local links/assets/anchors resolve. Shared lifecycle code, original research page, and every file in the public maintenance tree remain byte-identical. git diff --check passed.
 - New images: four generated concept illustrations; source prompts/original paths in assets/health/SOURCES.md. Screenshots in workspace qa/: health-desktop.jpg, health-api-desktop.jpg, health-mobile.jpg.
+
+### Health AI principles-only refinement — 2026-11-08
+
+Removed product-specific examples, metabolic-pilot narrative and prominent ESIVA presentation. The main page explains general ARC/data/API principles; only a concise closing ESIVA referral remains, alongside the existing footer link. No pilot offer. Desktop 1440×900 and mobile 390×844 checked: no overflow; final CTA resolves to https://esiva.app/. Screenshot: qa/health-esiva-referral.jpg. Existing assets and other pages untouched. git diff --check passed.
