@@ -30,3 +30,15 @@
 @media(max-width:760px){.lifecycle-story{--scene-top:126px}.story-scene{min-height:740px}.story-copy{width:100%;max-width:500px}.story-copy h3{font-size:34px;max-width:360px;margin-bottom:15px}.story-copy .eyebrow{font-size:8px;letter-spacing:.1em;margin-bottom:16px}.story-intro{font-size:13px;margin-bottom:18px;max-width:350px}.story-tasks li{font-size:13px;padding:11px 0}.story-image{object-position:68% center}.story-shade{background:linear-gradient(90deg,#03131fe8,#03131f8a),linear-gradient(0deg,#03131fe6,transparent 80%)}.story-bottom{left:20px;right:20px;bottom:18px;font-size:9px}.story-stage-label,.scene-disclaimer{display:none}.story-content{padding-block:50px 70px}.story-ready:not(.story-static) .story-stage{height:200svh}}
 @media(max-height:760px){.story-ready:not(.story-static) .story-stage{height:auto}.story-scene{min-height:650px}.scroll-cue{display:none}.story-tasks li{opacity:1!important;transform:none!important}}
 @media(prefers-reduced-motion:reduce){.story-stage{height:auto!important}.story-scene{position:relative!important;height:auto!important;min-height:700px!important}.story-tasks li{opacity:1!important;transform:none!important}.story-image{transform:none!important}.scroll-cue,.scene-progress{display:none}}
+/* Service details are the main reading content, not small captions. */
+.story-intro{font-size:20px;line-height:1.55;max-width:540px;color:#d5e3eb}
+.story-tasks li{font-size:20px;line-height:1.45;padding:13px 0}
+.story-tasks li>span{font-size:18px}
+.story-copy{width:50%;max-width:620px}
+@media(max-width:1100px){.story-copy{width:58%}.story-intro,.story-tasks li{font-size:18px}}
+@media(max-width:760px){.story-copy{width:100%;max-width:500px}.story-intro,.story-tasks li{font-size:17px;line-height:1.5}.story-intro{max-width:100%}.story-tasks li{padding:11px 0}}
+/* If enlarged text cannot fit the viewport, preserve it in ordinary flow. */
+.story-ready:not(.story-static) .story-stage.story-natural{height:auto}
+.story-ready:not(.story-static) .story-natural .story-scene{position:relative;height:auto;min-height:calc(100svh - var(--scene-top))}
+.story-ready:not(.story-static) .story-natural .story-content{height:auto;min-height:inherit;padding-block:50px 75px}
+.story-natural .story-tasks li{opacity:1!important;transform:none!important}.story-natural .scroll-cue{display:none}

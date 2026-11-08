@@ -27,3 +27,15 @@ The original repository used a text wordmark, not a separate Nordic Labs logo im
 Replaced the six small visualization cards with six individual full-width illustrated scenes. Scroll-linked chapters hold their backgrounds while task bullets progressively reveal. No animation dependencies were added. The ordinary document flow remains available without JavaScript, through the Show all tasks button, on shorter screens, and for reduced-motion preferences.
 
 Browser checks covered all six chapter layouts at 1440×1000, 1024×768, 390×844, 320×844 and 390×700. No horizontal overflow or broken fragment links. Text height fits within every scene. Verified the first chapter starts with hidden visual bullets and reveals them sequentially (two visible, third partially visible, fourth unrevealed at an intermediate scroll position); the background remains pinned at 147px below the navigation. Mobile sticky scene remained at 127px with readable text. Verified the low-height fallback uses ordinary relative positioning. Show all tasks exposes every bullet and disables sticky animation. No browser warnings/errors were recorded. Reduced-motion CSS and preference-change handling reviewed. Image provenance: `assets/LIFECYCLE-IMAGES.md`.
+
+## Three-panel homepage and larger service text
+
+Homepage now presents Data Driven Solutions above three independently linked, diagonally clipped image panels. Desktop document size equals the viewport at 1440×900 and 1024×768. Mobile layouts checked at 390×844 and 320×740: stacked diagonal panels, readable labels and no horizontal overflow. Mobile menu opens and closes. Pointer navigation from the Industrial panel reaches the gateway and then Nuclear; Robotics reaches its existing placeholder. Both homepage Health links still target `https://esiva.app`.
+
+Keyboard focus verified on the Robotics panel: brightness 0.98 for the selected image and 0.42 for the others; hover uses the same 350ms styling. Reduced-motion styles disable transitions and zoom. All images loaded. Browser console returned no warnings or errors.
+
+Nuclear task and introductory text is 20px on desktop and 17–18px at smaller widths; supporting benefits and deployment explanations are also larger. Measured all six chapters at 1440×900, 390×844 and 320×740: copy fits within each scene, with ordinary scrolling automatically used where enlarged content cannot fit a pinned viewport. No horizontal overflow. At an intermediate licensing scroll position, four tasks were revealed and the fifth was partially visible; the licensing navigation item was active.
+
+All local HTML href/src destinations exist. Root maintenance files and CNAME match the preserved maintenance branch byte-for-byte. Live `/`, `/arc-engine/` and `/404.html` still serve maintenance. Protected local and remote branch SHAs remain unchanged. No Pages configuration was modified.
+
+Changed/added: `index.html`, `assets/home-gateway.css`, `assets/robotics-inspection.webp`, `assets/health-feedback.webp`, `assets/lifecycle-story.css`, `assets/lifecycle-story.js`, `assets/refinements.css`, `assets/IMAGE-SOURCES.md`, and this QA record.

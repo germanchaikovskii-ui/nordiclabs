@@ -16,6 +16,8 @@
     document.querySelector('.lifecycle-story').style.setProperty('--scene-top', `${top}px`);
     let active = 0;
     data.forEach(({chapter,tasks}, index) => {
+      const natural = chapter.querySelector('.story-copy').offsetHeight + 94 > innerHeight - top;
+      chapter.classList.toggle('story-natural', natural);
       const rect = chapter.getBoundingClientRect();
       const distance = Math.max(1, rect.height - (innerHeight - top));
       const progress = clamp((top - rect.top) / distance);
@@ -23,7 +25,7 @@
       chapter.style.setProperty('--chapter-progress', progress);
       chapter.style.setProperty('--scene-scale', 1.045 - progress * .045);
       tasks.forEach((task, taskIndex) => {
-        const reveal = showAll || reduced.matches || shortScreen.matches ? 1 : clamp((progress - .05 - taskIndex * .115) / .09);
+        const reveal = showAll || reduced.matches || shortScreen.matches || natural ? 1 : clamp((progress - .05 - taskIndex * .115) / .09);
         task.style.setProperty('--task-opacity', reveal);
         task.style.setProperty('--task-offset', `${(1 - reveal) * 16}px`);
       });

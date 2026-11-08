@@ -23,3 +23,12 @@ Control-room prompt: Premium corporate website editorial photograph, wide landsc
 Brand provenance: `main` at `844c96787237015769ce5ee4c2dae369fe48cd05` uses the literal text “Nordic Labs”, system font, bold weight and -0.06em letter spacing. No standalone Nordic Labs logo asset exists in the tracked history. The development header now reuses this original wordmark treatment at header size; the invented N symbol, subtitle and favicon have been removed. ARC Engine research branding is preserved as originally implemented.
 
 Contact provenance: `index.html` at original commit `4e836be` contains `hello@nordiclabs.tech`. The new mailto actions reuse that address. Repository provenance is verified; mailbox deliverability has not been tested and no email was sent.
+
+## Homepage focus-area imagery — 2026-11-08
+
+`robotics-inspection.webp` and `health-feedback.webp` were created for this website using OpenAI image generation. No third-party stock assets were used. They are conceptual illustrations, not photographs of Nordic Labs products or facilities. Original generated PNGs remain in the local generated-image archive.
+
+- **Robotics:** cinematic inspection of an unfinished steel and concrete structure by a tracked articulated manipulator, quadruped robot and two drones; cyan inspection light, midnight navy materials, dark space for HTML headings.
+- **Health:** a person with a wrist sensor, research visualizations and health trends connected by a luminous circular feedback path; collection, research, insight and returned feedback. No diagnosis or clinical outcome claims.
+- Both prompts specified portrait 3:4, realistic detail, cyan/mint accents, no text, logos or watermark.
+- Industrial reuses the existing generated lifecycle construction illustration; see `LIFECYCLE-IMAGES.md`.
