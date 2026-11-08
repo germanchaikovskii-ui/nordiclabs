@@ -1,0 +1,32 @@
+/* Full-viewport engineering chapters. Content remains visible without JavaScript. */
+.lifecycle-story{background:#041521;color:#fff;--scene-top:146px}
+.story-stage{position:relative;scroll-margin-top:0}
+.story-scene{position:relative;min-height:760px;overflow:hidden;isolation:isolate;background:#061b2b}
+.story-image,.story-shade{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.story-image{object-position:65% center}
+.story-shade{z-index:-1;background:linear-gradient(90deg,#03131ff5 0%,#03131fdb 25%,#03131f80 50%,#03131f10 80%),linear-gradient(0deg,#03131fc0,transparent 40%)}
+.story-content{min-height:inherit;display:flex;align-items:center;padding-block:65px 85px}
+.story-copy{width:48%;max-width:570px}
+.story-copy .eyebrow{color:#6ff2d6;font-size:10px;letter-spacing:.16em;margin-bottom:20px}
+.story-copy h3{color:#fff;font-size:clamp(34px,3.5vw,54px);font-weight:500;line-height:1.09;margin-bottom:20px;letter-spacing:-.045em}
+.story-intro{color:#b7cdd8;font-size:15px;line-height:1.65;max-width:470px;margin-bottom:28px}
+.story-tasks{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.story-tasks li{display:flex;gap:13px;align-items:baseline;border-top:1px solid #91c5d329;padding:13px 0;font-size:15px;line-height:1.4;color:#f1f8fc}
+.story-tasks li>span{color:#52ebcb;font-size:14px}
+.story-bottom{position:absolute;bottom:23px;left:48px;right:48px;display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:10px;color:#c0d3dc;letter-spacing:.08em}
+.story-stage-label{margin-left:18px;color:#7cabbc}.scroll-cue{font-size:9px;color:#6ff2d6}.scene-disclaimer{font-size:8px;color:#89a5b4;letter-spacing:.03em}
+.scene-progress{position:absolute;left:0;right:0;bottom:0;height:2px;background:#16384a}.scene-progress span{display:block;height:100%;background:#57eccd;transform:scaleX(var(--chapter-progress,0));transform-origin:left}
+.story-controls{padding-bottom:25px}.story-mode{display:none;background:none;border:1px solid #afc8d2;border-radius:4px;padding:9px 15px;color:#234f61;font-size:12px;cursor:pointer;min-height:44px}.story-ready .story-mode{display:inline-flex;align-items:center}.story-mode[aria-pressed=true]{background:#d9eee9;border-color:#188d7d}.story-mode:focus-visible{outline:3px solid #148e7e;outline-offset:4px}
+/* Scroll distance is deliberate: the background holds while tasks enter in order. */
+@media(min-height:761px){
+ .story-ready:not(.story-static) .story-stage{height:220svh}
+ .story-ready:not(.story-static) .story-scene{position:sticky;top:var(--scene-top);height:calc(100svh - var(--scene-top));min-height:0}
+ .story-ready:not(.story-static) .story-content{height:100%;min-height:0;padding-block:32px 62px}
+ .story-ready:not(.story-static) .story-image{transform:scale(var(--scene-scale,1.045));will-change:transform}
+ .story-ready:not(.story-static) .story-tasks li{opacity:var(--task-opacity,0);transform:translateY(var(--task-offset,16px));will-change:opacity,transform}
+}
+.story-static .scroll-cue{display:none}.story-static .scene-progress{display:none}
+@media(max-width:1100px){.story-copy{width:55%}.story-copy h3{font-size:38px}.story-intro{font-size:14px}.story-tasks li{font-size:14px;padding:11px 0}.story-bottom{left:28px;right:28px}}
+@media(max-width:760px){.lifecycle-story{--scene-top:126px}.story-scene{min-height:740px}.story-copy{width:100%;max-width:500px}.story-copy h3{font-size:34px;max-width:360px;margin-bottom:15px}.story-copy .eyebrow{font-size:8px;letter-spacing:.1em;margin-bottom:16px}.story-intro{font-size:13px;margin-bottom:18px;max-width:350px}.story-tasks li{font-size:13px;padding:11px 0}.story-image{object-position:68% center}.story-shade{background:linear-gradient(90deg,#03131fe8,#03131f8a),linear-gradient(0deg,#03131fe6,transparent 80%)}.story-bottom{left:20px;right:20px;bottom:18px;font-size:9px}.story-stage-label,.scene-disclaimer{display:none}.story-content{padding-block:50px 70px}.story-ready:not(.story-static) .story-stage{height:200svh}}
+@media(max-height:760px){.story-ready:not(.story-static) .story-stage{height:auto}.story-scene{min-height:650px}.scroll-cue{display:none}.story-tasks li{opacity:1!important;transform:none!important}}
+@media(prefers-reduced-motion:reduce){.story-stage{height:auto!important}.story-scene{position:relative!important;height:auto!important;min-height:700px!important}.story-tasks li{opacity:1!important;transform:none!important}.story-image{transform:none!important}.scroll-cue,.scene-progress{display:none}}
