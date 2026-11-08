@@ -49,3 +49,25 @@ Added a generated delivery-planning illustration, contractor execution/acceptanc
 Browser inspection covered 1440×900, 1440×1000, 1024×768, 390×844 and 320×740 during this revision. No horizontal document overflow or clipped chapter text. The enlarged detailed copy fits pinned desktop scenes; smaller viewports use the existing ordinary-flow fallback. Verified delivery-plan navigation/active state and task reveal, image loading, mobile milestone layout, agent cards and contact offer. Seven navigation links address the seven chapters. Console returned no warnings/errors. CSS reduced-motion and no-JavaScript fallback remain intact; no animation dependencies or script changes were added.
 
 Disk checks passed: phase order, two distinct milestones, unique IDs, existing local href/src targets and exact mailto recipient. IAEA source documents were opened and the cited passages checked. Public `/`, `/arc-engine/` and `/404.html` still show maintenance; root documents/CNAME remain byte-identical to temporary-maintenance. No Pages configuration changed.
+
+## Final audit against all user additions
+
+Checked the final implementation against each steering message, not just the last request. Two details were made explicit again: the equipment **and material** register, and incoming-document classification.
+
+| User addition | Implementation |
+| --- | --- |
+| Specific owner deliverables at every lifecycle stage | Seven illustrated chapters describe registers, source links, review queues, decisions and retained records. |
+| EPC/licensing basis, applicable standards and a requirements agent | EPC chapter records obligations, selected codes/editions/applicability and configures baseline checks. |
+| Basic Design, PSAR, safety analyses and project knowledge agent before construction licensing | Pre-licence chapter explicitly classifies/indexes these inputs and checks consistency with the baseline. |
+| Preliminary review, traffic light, approval and storage workflows | Three text-labelled statuses, source/revision evidence, comment resolution, supplier responses and authorized decisions. |
+| Licensing plan, project delivery plan and contractor responsibilities | Dedicated planning chapter before the construction-licence milestone, with a new generated illustration. |
+| Commencement gates, contractor progress, work-volume acceptance and accounting | Rules defined before licensing; execution workflow during construction tracks release, progress, acceptance and accounting/payment review. |
+| Two prominent licensing milestones and correct phase order | Construction Licence Granted precedes procurement/delivery and construction; Operating Licence Granted precedes operations. |
+| Equipment/material register, specifications, procurement, schedule integration | Explicit equipment/material records and technical specifications, supplier/delivery tracking, ERP and Oracle Primavera. |
+| Detailed Design, changes/configuration, as-built and PSAR-to-FSAR evidence | Construction and operating-licensing chapters retain the approved baseline and traceable evidence. |
+| Operations, maintenance, modernization and independent knowledge | Operations chapter and secure deployment section retain records independently of any LLM, with controlled model updates. |
+| IAEA principles and evidence for demonstrating conformity | Cited SSR-2/1 and SSR-2/2 provisions, a five-step traceability chain and retrievable evidence; no automatic approval claim. |
+| Project-specific CTA, references and conditional free pilot | See what works / Then decide; available reference solutions and no-cost pilot subject to agreed scope/terms. |
+| info@nordiclabs.tech | Visible address and both mailto targets use the owner-specified address; independent mailbox verification remains unperformed. |
+| Existing visual/branding requirements retained | Nordic Labs Tech Oy branding, larger text, illustrated scrolling scenes, diagonal homepage/gateway and unchanged ESIVA link. |
+| Isolation and preservation | Only development website files changed; main, public maintenance documents, CNAME and original research/media assets remain preserved. |
