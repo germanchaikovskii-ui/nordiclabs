@@ -39,3 +39,13 @@ Nuclear task and introductory text is 20px on desktop and 17–18px at smaller w
 All local HTML href/src destinations exist. Root maintenance files and CNAME match the preserved maintenance branch byte-for-byte. Live `/`, `/arc-engine/` and `/404.html` still serve maintenance. Protected local and remote branch SHAs remain unchanged. No Pages configuration was modified.
 
 Changed/added: `index.html`, `assets/home-gateway.css`, `assets/robotics-inspection.webp`, `assets/health-feedback.webp`, `assets/lifecycle-story.css`, `assets/lifecycle-story.js`, `assets/refinements.css`, `assets/IMAGE-SOURCES.md`, and this QA record.
+
+## Concrete owner deliverables, licensing milestones and contractor workflow
+
+The Nuclear page now has seven illustrated chapters. Three pre-construction-licence chapters cover requirements, licensing/delivery planning and Basic Design/PSAR/safety-analysis review. A prominent construction-licence milestone precedes procurement/delivery, Detailed Design and construction execution. A second milestone separates FSAR preparation from operations. Contractor commencement gates are explicitly work-package release decisions, not regulatory licences.
+
+Added a generated delivery-planning illustration, contractor execution/acceptance/accounting workflow, three specialist-agent roles plus the owner review workflow, accessible text-labelled traffic-light statuses, and a cited IAEA configuration-management section with a five-step evidence chain. Contact now uses owner-supplied info@nordiclabs.tech, with a conditional no-cost demonstration offer. See CONTENT-SOURCES.md for verification limits and source provenance.
+
+Browser inspection covered 1440×900, 1440×1000, 1024×768, 390×844 and 320×740 during this revision. No horizontal document overflow or clipped chapter text. The enlarged detailed copy fits pinned desktop scenes; smaller viewports use the existing ordinary-flow fallback. Verified delivery-plan navigation/active state and task reveal, image loading, mobile milestone layout, agent cards and contact offer. Seven navigation links address the seven chapters. Console returned no warnings/errors. CSS reduced-motion and no-JavaScript fallback remain intact; no animation dependencies or script changes were added.
+
+Disk checks passed: phase order, two distinct milestones, unique IDs, existing local href/src targets and exact mailto recipient. IAEA source documents were opened and the cited passages checked. Public `/`, `/arc-engine/` and `/404.html` still show maintenance; root documents/CNAME remain byte-identical to temporary-maintenance. No Pages configuration changed.

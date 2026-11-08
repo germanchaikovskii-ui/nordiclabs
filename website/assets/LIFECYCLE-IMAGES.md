@@ -28,3 +28,11 @@ A completed nuclear containment building and turbine hall seen through the glass
 
 A beautiful completed nuclear power plant on a Nordic lakeshore at dawn, containment buildings and cooling towers on the right reflected in calm water, subtle finely detailed cyan digital twin overlay aligned with one building, restrained connected asset points suggesting maintenance and accumulated engineering knowledge.
 
+
+## Delivery planning scene — 2026-11-08
+
+`lifecycle/delivery-plan.webp` was generated with the built-in OpenAI image tool for this project. The original PNG is retained at `/Users/germanchaikovskii/.codex/generated_images/01a1bb06-79b5-7cf1-a2ed-b40ff7a4e1b9/exec-32aaa298-2443-40f5-ae2e-50d38ab4e062.png`. WebP conversion preserves the generated composition. No third-party stock imagery was added. Conceptual illustration, not an actual project or software screenshot.
+
+Full prompt:
+
+Use case: stylized-concept. Asset type: cinematic full-width background illustration for a nuclear plant lifecycle consulting webpage, 16:9 landscape. Primary request: an owner-controlled project delivery planning environment before construction licensing. Photorealistic premium engineering project office, a detailed architectural scale model of a nuclear power station on a wide planning table; at right, three translucent digital panels with abstract Gantt schedule bars, linked work-package nodes and a contractor responsibility matrix; paper contract folders and rolled engineering drawings on desk. Show connections between plant model, work packages and schedule, subtle cyan/mint technical light. No readable text, no logos or watermark, no people needed, no fictional approval seals. Midnight navy and steel blue, realistic glass and metal, high-quality material detail. Concentrate plant model and luminous interfaces in right 55%, left 45% naturally dark quiet negative space for real HTML text. Illustrative proposed environment, not an actual software screenshot. Match sophisticated nuclear engineering editorial imagery, restrained and credible, not science-fiction.

@@ -64,3 +64,38 @@
 .nuclear-page .security-features h3{font-size:19px;line-height:1.3}
 .nuclear-page .security .lede,.nuclear-page .project-next p{font-size:19px;line-height:1.65}
 @media(max-width:760px){.nuclear-page .benefit-grid{grid-template-columns:1fr}.nuclear-page .benefit p,.nuclear-page .security-features p,.nuclear-page .human-note,.nuclear-page .section-heading p:last-child{font-size:16px}.nuclear-page .security-features{grid-template-columns:1fr}.nuclear-page .project-next p,.nuclear-page .security .lede{font-size:17px}}
+
+/* Concrete agent roles and accessible preliminary-review statuses. */
+.nuclear-page .agents{padding:70px 0}
+.nuclear-page .agents-inner{grid-template-columns:1fr;gap:30px}
+.nuclear-page .agents h2{font-size:clamp(30px,3vw,44px);line-height:1.15}
+.nuclear-page .agent-explanation{font-size:18px;line-height:1.65;max-width:850px;margin:22px 0 0;color:#365464}
+.nuclear-page .agent-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.nuclear-page .agent-item{align-items:flex-start;justify-content:flex-start;text-align:left;padding:28px;gap:14px}
+.nuclear-page .agent-item h3{font-size:22px;line-height:1.25;margin:0}
+.nuclear-page .agent-item p{font-size:17px;line-height:1.65;margin:0;color:#365464}
+.review-key{margin-top:32px;padding:28px;border:1px solid #bbd0d9;background:#f7fafc;border-radius:6px}
+.review-key h3{font-size:23px;margin:0 0 10px}.review-key>p{font-size:17px;color:#365464}
+.review-key ul{list-style:none;padding:0;margin:24px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.review-key li{border-top:3px solid;padding-top:14px;font-size:16px;line-height:1.6}.review-key strong,.review-key span{display:block}.review-key strong{font-size:17px;margin-bottom:8px}.review-key span{color:#365464}
+.review-key .review-green{border-color:#16846c}.review-key .review-amber{border-color:#b17b09}.review-key .review-red{border-color:#c44a52}
+@media(max-width:760px){.nuclear-page .agent-list,.review-key ul{grid-template-columns:1fr}.nuclear-page .agent-list .agent-item:last-child{grid-column:auto}.nuclear-page .agent-item{padding:22px}.nuclear-page .agent-explanation,.nuclear-page .agent-item p{font-size:17px}.review-key{padding:22px}.nuclear-page .agents{padding:45px 0}}
+
+/* Licensing transitions, contractor execution and requirement evidence. */
+.nuclear-page .agent-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+.licence-milestone{background:radial-gradient(ellipse at 90% 50%,#164e58,#061d2b 65%);color:#fff;padding:85px 0;border-block:1px solid #45b9ac70;position:relative;scroll-margin-top:0}
+.licence-milestone .wrap{display:grid;grid-template-columns:150px 1fr;gap:35px;align-items:center}
+.milestone-index{font-size:120px;line-height:1;font-weight:300;color:#61e6cb55;letter-spacing:-.07em}
+.licence-milestone .eyebrow{color:#75efd8}.licence-milestone h3{font-size:clamp(36px,4.6vw,66px);line-height:1.05;letter-spacing:-.045em;margin:0 0 24px;font-weight:500;max-width:900px}
+.licence-milestone p:not(.eyebrow){font-size:20px;line-height:1.6;color:#c7dce4;max-width:800px}.milestone-next{display:inline-block;color:#7cf2d6;font-size:17px;padding-top:12px}.licence-milestone p.milestone-note{font-size:13px;margin:22px 0 0;color:#a7c0cc}
+.contractor-execution{padding:75px 0;background:#0b2433;color:#fff}.contractor-execution .eyebrow{color:#75efd8}.contractor-execution h3{font-size:clamp(32px,3.4vw,48px);line-height:1.1;margin-bottom:20px}.execution-lede{font-size:20px;line-height:1.6;max-width:790px;color:#c7dce4}
+.execution-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;padding:0;list-style:none;margin:35px 0}.execution-steps li{border:1px solid #476977;background:#ffffff05;border-radius:8px;padding:25px}.execution-steps li>span{font-size:14px;color:#77efd6}.execution-steps h4{font-size:22px;line-height:1.2;margin:22px 0 16px}.execution-steps p{font-size:17px;line-height:1.65;color:#c7dce4;margin:0}.execution-note{font-size:16px;color:#afc6d1;line-height:1.65;max-width:950px}
+.traceability-foundation{padding:85px 0;background:#f2f7f8}.traceability-foundation h2{font-size:clamp(34px,4vw,56px);max-width:900px;line-height:1.08}.traceability-lede{font-size:21px;line-height:1.6;max-width:950px;color:#365464}
+.iaea-basis{display:grid;grid-template-columns:1fr 1fr;gap:35px;margin:35px 0 40px}.iaea-basis p{font-size:17px;line-height:1.65;margin:0;color:#365464}.iaea-basis strong{color:#102f40}.iaea-basis a{display:block;margin-top:12px;color:#096b62;text-underline-offset:4px}
+.trace-chain-title{font-size:23px}.trace-chain{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px;list-style:none;padding:0;margin:24px 0 35px}.trace-chain li{padding:23px 18px;background:#fff;border:1px solid #c9dde3;border-radius:7px;position:relative}.trace-chain li:not(:last-child):after{content:'→';position:absolute;right:-15px;top:45%;color:#138774;font-size:19px}.trace-chain span{display:block;font-size:10px;letter-spacing:.07em;color:#167767;margin-bottom:18px}.trace-chain strong{font-size:17px;line-height:1.45;font-weight:600}
+.traceability-result{padding:30px;border-left:3px solid #1aa58d;background:#e5f0ef}.traceability-result h3{font-size:26px;line-height:1.2;margin-bottom:15px}.traceability-result p{font-size:18px;line-height:1.65;max-width:1000px;color:#365464}.traceability-result p:last-child{margin-bottom:0}.traceability-source{font-size:14px;line-height:1.7;color:#526c79;margin:25px 0 0}.traceability-source a{color:#096b62;text-underline-offset:3px}
+.nuclear-page .project-next .pilot-offer{font-size:18px;line-height:1.65;border-left:3px solid #099e85;padding-left:20px}.pilot-offer strong{font-weight:600}
+@media(max-width:1100px){.execution-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.trace-chain{grid-template-columns:1fr;gap:20px}.trace-chain li:not(:last-child):after{content:'↓';right:50%;top:auto;bottom:-22px}.trace-chain li{display:flex;align-items:center;gap:20px}.trace-chain span{min-width:155px;margin:0}}
+@media(max-width:760px){.licence-milestone{padding:55px 0;scroll-margin-top:0}.licence-milestone .wrap{grid-template-columns:1fr;gap:15px}.milestone-index{font-size:65px}.licence-milestone p:not(.eyebrow){font-size:18px}.licence-milestone p.milestone-note{font-size:13px}.execution-steps,.iaea-basis,.nuclear-page .agent-list{grid-template-columns:1fr}.contractor-execution,.traceability-foundation{padding:55px 0}.execution-lede,.traceability-lede{font-size:18px}.trace-chain li{display:block}.trace-chain span{margin-bottom:12px}.traceability-result{padding:22px}.traceability-result p{font-size:17px}.nuclear-page .project-next .pilot-offer{font-size:17px}}
+
+.nuclear-page .contact-section h2{font-size:clamp(38px,3.8vw,58px);line-height:1.08;letter-spacing:-.045em}.nuclear-page .project-next .eyebrow{font-size:11px;line-height:1.5;letter-spacing:.14em;margin-bottom:20px}

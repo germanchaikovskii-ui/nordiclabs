@@ -42,3 +42,11 @@
 .story-ready:not(.story-static) .story-natural .story-scene{position:relative;height:auto;min-height:calc(100svh - var(--scene-top))}
 .story-ready:not(.story-static) .story-natural .story-content{height:auto;min-height:inherit;padding-block:50px 75px}
 .story-natural .story-tasks li{opacity:1!important;transform:none!important}.story-natural .scroll-cue{display:none}
+
+/* Keep deliverable names distinct without reducing the explanation size. */
+.story-tasks strong{font-weight:650;color:#fff}.story-tasks li>span{flex-shrink:0}
+
+.story-copy{width:58%;max-width:720px}
+.story-shade{background:linear-gradient(90deg,#03131ff5 0%,#03131fe3 30%,#03131fa6 55%,#03131f10 85%),linear-gradient(0deg,#03131fc0,transparent 40%)}
+@media(max-width:1100px){.story-copy{width:66%}}
+@media(max-width:760px){.story-copy{width:100%;max-width:500px}.story-shade{background:linear-gradient(90deg,#03131fe8,#03131f8a),linear-gradient(0deg,#03131fe6,transparent 80%)}}
