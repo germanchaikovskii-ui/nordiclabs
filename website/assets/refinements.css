@@ -52,3 +52,8 @@
 /* Bound links to their own side so pointer and keyboard activation agree. */
 @media(min-width:761px){.industry-panel{width:58%;right:auto}.nuclear-panel{clip-path:polygon(0 0,100% 0,72.413793% 100%,0 100%)}.conventional-panel{left:42%;clip-path:polygon(27.586207% 0,100% 0,100% 100%,0 100%)}.industry-panel img{left:0;width:100%}.panel-title{left:12.07%;max-width:70%}.conventional-panel .panel-title{left:32.76%;max-width:64%}}
 @media(max-width:760px){.industry-panel{height:56%;bottom:auto}.nuclear-panel{clip-path:polygon(0 0,100% 0,100% 78.571429%,0 100%)}.conventional-panel{top:44%;clip-path:polygon(0 21.428571%,100% 0,100% 100%,0 100%)}.industry-panel img{height:100%;top:0}.panel-title{top:44.64%}.conventional-panel .panel-title{top:57.14%}}
+
+/* Keep the full legal company name readable beside the mobile menu. */
+.original-wordmark{white-space:nowrap}
+@media(max-width:480px){.original-wordmark{font-size:22px}.header-inner{gap:12px}}
+@media(max-width:350px){.original-wordmark{font-size:20px}}
