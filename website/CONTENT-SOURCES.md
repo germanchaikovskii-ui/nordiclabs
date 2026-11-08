@@ -36,3 +36,12 @@ The contact and conditional demonstration offer follow the user’s approved Nuc
 Based on the owner's requested integrated AI service for drones, quadrupeds, humanoids and selected manipulators: construction monitoring, requirement-linked inspections, operational inspection intervals, maintenance/replacement follow-up, reports and Oracle Primavera coordination. This describes a proposed scoped integration service, not an existing universal robotics product. Available interfaces, platform capabilities and site conditions must be assessed. Physical maintenance is separately scoped; inspection findings feed authorized maintenance and acceptance decisions. AI-generated progress proposals are distinct from approved schedule updates. No numerical performance, autonomous acceptance or vendor interoperability guarantees are made.
 
 Contact: owner-specified `info@nordiclabs.tech`. A no-cost demonstration is conditional on agreed scope and terms following discussions. New original conceptual illustrations and exact prompts: `assets/robotics/SOURCES.md`. Shared lifecycle behavior is reused without changing the Nuclear or Conventional pages.
+
+
+## Health AI / ARC Engine — 2026-11-08
+
+Positioning supplied by the owner: Nordic Labs Tech Oy’s Adaptive Response Core (ARC Engine), an API environment for user-data analysis and integration with external organizations; conclude with ESIVA as an application, not a pilot offer. Adaptive-cycle copy grounded in the existing `website/arc-engine/index.html`: observe, understand, guide, watch, adapt; research hypotheses are not universal rules; missing feedback is not a contradiction; personalization follows repeated observations. That research page and its assets remain unchanged.
+
+API data flows, access scoping and partner boundaries describe the proposed integration approach, not verified production endpoints or a public API specification. No endpoint names, third-party integrations, certifications, clinical outcomes or universal medical claims are invented. No live user data is collected or transmitted by this static marketing page.
+
+ESIVA URL `https://esiva.app` recovered from original repository links and retained exactly. The web retrieval tool could not access the live website. Browser navigation subsequently confirmed the URL opens successfully and currently displays Coming Soon; no additional product claims were taken from it. Original ARC Engine and ESIVA logo assets reused. Image provenance/prompts: `assets/health/SOURCES.md`.

@@ -95,3 +95,13 @@ Files: industrial/conventional/index.html, assets/conventional-page.css, six ass
 - Static validation: unique IDs; all page-local links, assets and fragments resolve; six chapter sections; no remaining homepage development label. Browser error/warning log empty. git diff --check passed.
 - Every original file in the temporary-maintenance tree matches its recorded Git blob. Live /, /arc-engine/ and /404.html still display maintenance. No Pages settings or publishing actions performed.
 - Screenshots retained in the working folder qa/: robotics-desktop.jpg, robotics-fleet-desktop.jpg, robotics-mobile.jpg.
+
+
+## Health AI / ARC Engine — 2026-11-08
+
+- Added six scroll chapters and 24 points covering Observe, Understand, Respond, Watch & adapt, Partner APIs and Data control. Added a live HTML API-flow diagram, original ARC Engine/ESIVA logos, a link to preserved research, and an ESIVA product CTA. No demonstration-pilot offer on this page.
+- Health navigation from the home panel and shared headers now opens /website/health/. Explicit ESIVA links retain https://esiva.app. Other service-page changes are limited to that header navigation.
+- Browser: 1440×900, 1024×768, 390×844 and 320×740; no horizontal overflow or clipped text. Six chapters fit desktop pinned scenes. Verified active-stage navigation and progressive task reveal. Mobile menu works; show-all exposes all 24 points. Keyboard focus visible. Shared reduced-motion and no-JS behavior retained unchanged (code review).
+- Home panel, ESIVA CTA and ARC research link exercised in the browser. ESIVA currently displays Coming Soon, not a product demo; the destination URL is correct. No messages or data submitted. Browser warning/error log empty.
+- Static checks across all website HTML: unique IDs and local links/assets/anchors resolve. Shared lifecycle code, original research page, and every file in the public maintenance tree remain byte-identical. git diff --check passed.
+- New images: four generated concept illustrations; source prompts/original paths in assets/health/SOURCES.md. Screenshots in workspace qa/: health-desktop.jpg, health-api-desktop.jpg, health-mobile.jpg.
