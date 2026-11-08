@@ -50,3 +50,10 @@ ESIVA URL `https://esiva.app` recovered from original repository links and retai
 ### Health AI scope refinement — 2026-11-08
 
 Owner clarified that Health AI explains the general ARC Engine/API principles, while ESIVA’s product presentation belongs on its separate website. Removed product-specific input examples and metabolic-pilot discussion; retained contextual analysis, feedback, model-independent history and scoped organizational integration. Replaced the large ESIVA product block with a brief closing link. Removed the hero ESIVA promotion; the hero now points to API integration. Existing research materials and original brand assets are preserved.
+
+
+## Shared branding, contacts and owner-agent diagram — 2026-11-08
+
+Business ID corrected and explicitly confirmed by the owner as 3668654-2. Email-draft contact workflow explicitly selected by the owner; recipient remains info@nordiclabs.tech. Original Nordic Labs logo located in local SLUSH materials, copied without alteration, and framed using SVG for the header emblem and favicon; provenance in assets/brand/SOURCE.md. The historical repository contained only a Nordic Labs text heading, not this standalone emblem.
+
+Nuclear diagram now connects the plant supplier/contractors, six specialized AI agents within an owner-controlled knowledge environment, and owner engineers. Nordic Labs lifecycle support includes configuration, agent-workflow training, validation and maintenance against approved project knowledge. Structured knowledge remains independent of the AI model; no continuous foundation-model training or autonomous approval is promised.

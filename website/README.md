@@ -19,6 +19,7 @@ Routes:
 - `/website/industrial/nuclear/` — seven-stage lifecycle, licensing milestones and deployment concept
 - `/website/industrial/conventional/` — industrial lifecycle support for new projects and operating production
 - `/website/robotics/` — connected robotics, inspection, site progress and maintenance workflows
+- `/website/contact/` — enquiry form that prepares an email draft; no server submission
 - `/website/arc-engine/` — preserved research content adapted for local navigation
 - `/website/health/` — ARC Engine API-oriented user-data environment, with ESIVA as the concluding product example
 - Explicit ESIVA links retain `https://esiva.app`, recovered from the original website
@@ -32,3 +33,9 @@ Navy / teal hero, pale six-stage vertical lifecycle, agent strip, owner benefits
 ## Publication guardrails
 
 Do not change `main`, `temporary-maintenance`, `CNAME`, root `index.html`, root `404.html`, `arc-engine/index.html`, or GitHub Pages configuration. The development branch must not be selected as the GitHub Pages source. No automated deployment workflow is included.
+
+## Shared navigation and contact
+
+All eight development routes use the same header/footer links: Industrial AI, Robotics AI, Health AI and Contact Us. Company identifier: owner-confirmed Y-tunnus 3668654-2. The original local Nordic Labs emblem and favicon framing are documented in `assets/brand/SOURCE.md`.
+
+Contacts prepare a visible email draft addressed to info@nordiclabs.tech. The user opens it in their own email application and sends it there. Copy Enquiry is a fallback for clients that do not handle mailto links or long drafts. No service credentials, network submission, analytics or persistent form storage are added. Without JavaScript the form remains disabled and the direct email link is available.

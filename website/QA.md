@@ -109,3 +109,14 @@ Files: industrial/conventional/index.html, assets/conventional-page.css, six ass
 ### Health AI principles-only refinement — 2026-11-08
 
 Removed product-specific examples, metabolic-pilot narrative and prominent ESIVA presentation. The main page explains general ARC/data/API principles; only a concise closing ESIVA referral remains, alongside the existing footer link. No pilot offer. Desktop 1440×900 and mobile 390×844 checked: no overflow; final CTA resolves to https://esiva.app/. Screenshot: qa/health-esiva-referral.jpg. Existing assets and other pages untouched. git diff --check passed.
+
+
+## Shared site navigation / contact / owner-agent diagram — 2026-11-08
+
+- All eight development pages now have exactly one shared header and footer with the three business areas and Contact Us. Footer includes owner-confirmed Y-tunnus 3668654-2. Homepage and industrial gateway retain their desktop single-screen layout with the footer included.
+- Original logo JPEG preserved byte-for-byte. Header emblem/favicon are clipped SVG viewports of the original artwork, not generated replacements. Browser verified the emblem loads; every page references the same local favicon.
+- Nuclear hero’s previous model/AI graphic replaced by a larger live-HTML supplier → owner-controlled specialist agents → owner engineers diagram, with a separate lifecycle training/support band. Mobile reflows vertically. No flattened screenshot used.
+- Browser inspected desktop 1440×900, tablet 1024×768 and narrow mobile 320×740. All eight routes checked for matching navigation and horizontal overflow. The industrial gateway fits 320×740 including its footer. ARC research content retained; shared chrome also inspected there.
+- Contact form: empty required fields and malformed email block preparation; five topic options work. Valid data generates correct mailto recipient, encoded subject/body, multiline content and visible draft. Editing invalidates stale drafts. Copy Enquiry succeeded. No email was sent. Disabled fieldset/no-JS direct-email fallback reviewed; handlers enable form only after initialization. Browser errors/warnings empty.
+- Static checks: local links/assets/fragments resolve, IDs unique, all original maintenance-tree blobs unchanged, original logo bytes preserved, JavaScript syntax valid, git diff --check passed. Live /, /arc-engine/ and /404.html still display maintenance.
+- Screenshots in workspace qa/: shared-home-desktop.jpg, contact-desktop.jpg, nuclear-owner-agents.jpg. Main and maintenance refs unchanged; no Pages configuration touched.
