@@ -7,3 +7,7 @@
 @media(max-width:380px){.site-header .original-wordmark{font-size:18px}.site-header .company-mark{width:34px;height:34px}}
 @media(max-height:600px) and (min-width:761px){.home-gateway-page,.gateway-page{height:auto;min-height:100svh}.home-panels,.industry-gateway{min-height:420px}}
 @media(prefers-reduced-motion:reduce){.research-page{scroll-behavior:auto}.research-page *{scroll-behavior:auto!important}}
+
+/* Allow the six footer links to wrap without compressing the company identity. */
+.site-footer .footer-company{flex-shrink:0}.site-footer .footer-links{justify-content:flex-end;gap:6px 22px;max-width:680px}.site-footer .footer-links a[aria-current=page]{color:#58e7ca}.pilot-offer a{text-underline-offset:3px}
+@media(max-width:760px){.site-footer .footer-links{justify-content:flex-start}}
