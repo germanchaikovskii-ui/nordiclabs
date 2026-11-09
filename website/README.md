@@ -36,7 +36,7 @@ Do not change `main`, `temporary-maintenance`, `CNAME`, root `index.html`, root 
 
 ## Shared navigation and contact
 
-All eight development routes use the same header/footer links: Industrial AI, Robotics AI, Health AI and Contact Us. Company identifier: owner-confirmed Y-tunnus 3668654-2. The original local Nordic Labs emblem and favicon framing are documented in `assets/brand/SOURCE.md`.
+All eight development routes use the same header/footer links: Industrial AI, Robotics AI, Health AI and Contact Us. Company identifier: owner-confirmed Y-tunnus 3668654-2. The approved geometric N identity and preserved legacy artwork are documented in `assets/brand/SOURCE.md`.
 
 Contacts prepare a visible email draft addressed to info@nordiclabs.tech. The user opens it in their own email application and sends it there. Copy Enquiry is a fallback for clients that do not handle mailto links or long drafts. No service credentials, network submission, analytics or persistent form storage are added. Without JavaScript the form remains disabled and the direct email link is available.
 
@@ -49,3 +49,7 @@ Contacts prepare a visible email draft addressed to info@nordiclabs.tech. The us
 - References checked: GDPR Articles 6, 12–14, 15–22 and 44–49 (https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng); GitHub Privacy Statement (https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement); GitHub Pages hosting documentation (https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages); Finnish complaint guidance (https://tietosuoja.fi/en/notification-to-the-data-protection-ombudsman).
 - Verification: all local links, assets and anchors resolve; all ten footers contain legal links; all three pilot offers updated. Browser checks cover legal pages, home and industry gateway at 320, 768 and 1280 pixels; no horizontal overflow, and desktop gateways retain a single viewport. Contact privacy navigation, mobile menu and nuclear pilot deep link work; no browser console warnings/errors observed.
 - Public root documents, ARC Engine original route, CNAME, main and temporary-maintenance are unchanged. Legal pages are in the unpublished development tree only.
+
+## Approved logo rollout — 9 November 2026
+
+The new geometric N emblem appears in the header and footer on all ten development pages. Matching 64-pixel browser icons and 180-pixel touch icons use the approved artwork; full logo and generation provenance are retained in assets/brand. The company name remains Nordic Labs Tech Oy. All ten pages were checked at 320-pixel width with no horizontal overflow; desktop home was visually verified at 1280 pixels. Logo home navigation and the mobile menu work, and no console errors or warnings were observed. Local asset/link checks pass. Legacy artwork, public maintenance files, CNAME and protected branches remain unchanged.
