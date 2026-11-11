@@ -1,0 +1,62 @@
+.nuclear-film {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  max-height: 76svh;
+  color: white;
+  background: #071e2d url("nuclear-poster.jpg") center / cover;
+}
+.nuclear-film video, .nuclear-film::after {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.nuclear-film video { object-fit: cover; }
+.nuclear-film::after {
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(130deg, #031722d9, transparent 64%), #051b291c;
+}
+.nuclear-film-copy, .nuclear-film-control { position: absolute; z-index: 1; }
+.nuclear-film-copy {
+  top: clamp(18px, 4vw, 64px);
+  left: max(4%, calc((100% - var(--max)) / 2));
+  width: min(55%, 680px);
+}
+.nuclear-film-copy p {
+  margin: 0;
+  font-size: clamp(24px, 3.3vw, 55px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -.04em;
+  text-wrap: balance;
+  text-shadow: 0 2px 14px #041521a8;
+}
+.nuclear-film-copy span {
+  display: block;
+  margin-bottom: .65em;
+  font-size: clamp(12px, 1vw, 15px);
+  color: #abffec;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+.nuclear-film-control {
+  right: clamp(12px, 2vw, 32px);
+  bottom: clamp(12px, 2vw, 26px);
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid #8aa9b6;
+  border-radius: 5px;
+  background: #041521df;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.nuclear-film-control:focus-visible { outline: 3px solid #80f6da; outline-offset: 3px; }
+@media (max-width: 620px) {
+  .nuclear-film { aspect-ratio: 4 / 3; }
+  .nuclear-film-copy { width: 74%; }
+  .nuclear-film-copy p { font-size: clamp(20px, 5vw, 30px); }
+}
