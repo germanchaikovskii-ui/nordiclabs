@@ -70,3 +70,7 @@ Original AI-generated training-studio illustration created for Nordic Labs Tech 
 ## ar-athlete-view.webp and ar-studio-view.webp
 
 Original AI-generated concept illustrations for Nordic Labs Tech Oy, 2026-11-11. Two perspectives on a single dumbbell curl with a virtual coach. Exercise, set and ESIVA guidance in the athlete’s view are live HTML.
+
+## connected-fitness.webp
+
+Original AI-generated seated-row illustration for Nordic Labs Tech Oy, 2026-11-11. The phone, generic exercise machine and virtual coach illustrate a possible future session.
