@@ -66,3 +66,7 @@ Use case: stylized-concept. Premium cinematic editorial 3D illustration for a He
 ## ar-coaching.webp
 
 Original AI-generated training-studio illustration created for Nordic Labs Tech Oy on 2026-11-11. The field-of-view example is rendered separately in HTML. The image depicts a coaching concept and contains no third-party product photography.
+
+## ar-athlete-view.webp and ar-studio-view.webp
+
+Original AI-generated concept illustrations for Nordic Labs Tech Oy, 2026-11-11. Two perspectives on a single dumbbell curl with a virtual coach. Exercise, set and ESIVA guidance in the athlete’s view are live HTML.
