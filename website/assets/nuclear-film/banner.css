@@ -43,9 +43,9 @@
   position: absolute;
   z-index: -1;
   pointer-events: none;
-  inset: -.55em -.7em;
+  inset: -.65em -.8em;
   border-radius: .6em;
-  background: rgb(3 18 30 / 78%);
+  background: rgb(2 12 20 / 90%);
   filter: blur(.43em);
 }
 .nuclear-film-copy span {
