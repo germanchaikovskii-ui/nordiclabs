@@ -21,3 +21,19 @@
 @media(max-width:1000px) and (min-width:761px){.home-panel h2{font-size:30px}.home-panel-action{font-size:11px}.home-panel-copy{left:10%;width:60%}.home-robotics .home-panel-copy{left:22%;width:53%}.home-health .home-panel-copy{left:26%;width:68%}.home-panel-number{font-size:9px}}
 @media(max-width:760px){.home-gateway-page{height:auto;min-height:100svh;display:block}.home-gateway{display:block}.home-title{padding:28px 20px 32px}.home-title h1{font-size:40px;max-width:500px;margin:auto}.home-panels{display:block}.home-panel{position:relative;display:block;inset:auto;width:100%;height:380px;clip-path:polygon(0 0,100% 0,100% 90%,0 100%)}.home-robotics{margin-top:-38px;clip-path:polygon(0 10%,100% 0,100% 90%,0 100%)}.home-health{margin-top:-38px;clip-path:polygon(0 10%,100% 0,100% 100%,0 100%)}.home-panel-copy,.home-robotics .home-panel-copy,.home-health .home-panel-copy{left:7%;width:80%;bottom:65px}.home-panel h2{font-size:38px}.home-panel-action{font-size:14px;max-width:290px}.home-panel-number{font-size:10px}.home-panel>img{object-position:center top}.home-industrial>img{object-position:65% 50%}.home-panel:after{background:linear-gradient(0deg,#03141ff5,transparent 95%)} }
 @media(prefers-reduced-motion:reduce){.home-panel>img{transition:none}.home-panel:hover>img,.home-panel:focus-visible>img{transform:none}}
+
+/* Keep the product and the technology presentation independently selectable. */
+.home-health .home-panel-copy { position: static; }
+.home-health .home-panel-copy > * { position: relative; }
+.home-health { display: flex; align-items: flex-end; padding: 0 5% 0 0; }
+.home-health .home-panel-copy { width: 100%; margin: 0 0 12% 28.5%; }
+.home-health .health-product { position: static; text-decoration: none; }
+.health-product::before { content: ''; position: absolute; inset: 0; }
+.health-technology { display: inline-flex; align-items: center; min-height: 44px; gap: 8px; color: #b8f4e7; font-size: 14px; text-underline-offset: 4px; }
+.home-health:focus-within > img { filter: brightness(.98); }
+.home-health a:focus-visible { outline: 3px solid #75f1d7; outline-offset: 3px; }
+.home-health .health-product:focus-visible::before { outline: 3px solid #75f1d7; outline-offset: -5px; }
+@media (max-width: 760px) {
+  .home-health { padding: 0; }
+  .home-health .home-panel-copy { margin: 0 7% 36px; width: 80%; }
+}

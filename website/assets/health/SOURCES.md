@@ -62,3 +62,7 @@ Original: `/Users/germanchaikovskii/.codex/generated_images/01a1bb06-79b5-7cf1-a
 Final prompt:
 
 Use case: stylized-concept. Premium cinematic editorial 3D illustration for a Health AI data environment webpage, landscape 16:9. Midnight navy, restrained cyan/mint and subtle lavender accents, realistic materials and precise detail. Left 45 percent quiet and dark for large live HTML text; primary subject on the right. No text, logos, watermark, readable code or real personal data. Conceptual technology visualization, no diagnosis or medical results. An architectural visualization of carefully scoped access to personal information: a translucent layered archive of data tiles on the right, several elegant glass partitions with slim teal light gates opening distinct narrow routes to separate abstract application windows. A small luminous key-shaped geometric element signifies permissions. Solid dark plinth, subtle lavender reflections. No giant padlock, no globe, no person, no phone, no orb, no visible text. The composition communicates distinct access boundaries and preserved records.
+
+## ar-coaching.webp
+
+Original AI-generated training-studio illustration created for Nordic Labs Tech Oy on 2026-11-11. The field-of-view example is rendered separately in HTML. The image depicts a coaching concept and contains no third-party product photography.
