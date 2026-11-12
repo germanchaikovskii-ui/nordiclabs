@@ -78,3 +78,7 @@ Original AI-generated seated-row illustration for Nordic Labs Tech Oy, 2026-11-1
 ## workplace-team.webp
 
 Generated with OpenAI image generation for Corporate Health on 2026-11-12. Illustrative office team sharing lunch in a Nordic workplace.
+
+## employer-review.webp and program-launch.webp
+
+AI-generated editorial illustrations for Corporate Health, 2026-11-12. The scenes depict an HR review and a voluntary employee orientation.
