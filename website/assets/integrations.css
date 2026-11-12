@@ -1,0 +1,24 @@
+.integrations {
+  background: #092534;
+  color: #e6f1f4;
+  padding: 24px 0 16px;
+  border-block: 1px solid #315260;
+  text-align: center;
+}
+.integrations h2 { margin: 0; font: 600 clamp(16px, 2vw, 22px)/1.3 Arial, sans-serif; letter-spacing: 0; }
+.integration-window { overflow: hidden; margin-block: 16px; }
+.integration-track ul {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  list-style: none; padding: 0; margin: 0; gap: 10px 0;
+}
+.integration-track li { padding-inline: clamp(14px, 2vw, 40px); font-size: clamp(17px, 2vw, 28px); font-weight: 600; white-space: nowrap; }
+.integration-track li::before { content: ''; display: inline-block; width: 5px; height: 5px; background: #5ce5c8; margin-right: 14px; border-radius: 50%; vertical-align: middle; }
+.integration-track ul[aria-hidden] { display:none; }
+.integrations p { margin: 0 16px; color:#b7cbd2; font-size:13px; }
+.integrations button { background:transparent; color:#a4f0df; font:inherit; font-size:12px; text-decoration:underline; border:0; padding:8px 14px; cursor:pointer; }
+.integrations button:focus-visible { outline:2px solid #66e5cc; }
+@media (prefers-reduced-motion:no-preference) {
+  .integrations.scrolling .integration-track { display:flex; width:max-content; animation: integration-scroll 36s linear infinite; }
+  .integrations.scrolling .integration-track ul { display:flex; flex-wrap:nowrap; min-width:100vw; justify-content:space-around; }
+}
+@keyframes integration-scroll { to { transform:translateX(-50%); } }
