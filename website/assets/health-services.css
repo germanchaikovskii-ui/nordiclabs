@@ -54,3 +54,23 @@
 .overview-research img {display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:70% center;border-radius:12px}
 .overview-research figcaption {margin-top:1em;color:#c4d9df;font-size:15px;line-height:1.5}
 @media(max-width:800px){.esiva-overview-inner{grid-template-columns:1fr;gap:30px}}
+
+.api-steps {display:flex;flex-wrap:wrap;gap:12px 22px;margin-top:26px}
+.api-steps a {color:#a1f2df;text-underline-offset:5px}
+.api-chapter {position:relative;isolation:isolate;overflow:hidden;color:white;background:var(--chapter-tone);padding:clamp(64px,8vw,128px) 0;scroll-margin-top:88px}
+.api-input {--chapter-tone:#0a2632}
+.api-analysis {--chapter-tone:#141e34}
+.api-results {--chapter-tone:#092d2c}
+.api-chapter>img {position:absolute;right:0;top:0;width:62%;height:100%;object-fit:cover;object-position:68% center;z-index:-2}
+.api-chapter::before {content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,var(--chapter-tone) 39%,transparent 84%)}
+.api-copy {width:min(47%,610px)}
+.api-copy h2 {font-size:clamp(32px,3.5vw,58px);line-height:1.08;letter-spacing:-.04em}
+.api-copy p:not(.eyebrow) {font-size:clamp(17px,1.3vw,20px);line-height:1.55;color:#e0edef;margin:1em 0 0}
+@media(max-width:760px){
+ .api-chapter {padding:0 0 42px}
+ .api-chapter>img {position:static;display:block;width:100%;height:clamp(170px,46vw,280px)}
+ .api-chapter::before {display:none}
+ .api-copy {width:100%;padding-top:26px}
+}
+
+.api-chapter .eyebrow {color:#99eddb}
