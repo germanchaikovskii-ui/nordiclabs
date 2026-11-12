@@ -74,3 +74,22 @@
   .nuclear-film-copy { width: 74%; }
   .nuclear-film-copy p { font-size: clamp(20px, 5vw, 30px); }
 }
+
+.nuclear-film::after {
+  background: linear-gradient(to top, rgb(3 15 23 / 82%), transparent 23%),
+              linear-gradient(130deg, #031722d9, transparent 64%), #051b291c;
+}
+.nuclear-film .film-notice {
+  position: absolute;
+  z-index: 1;
+  left: clamp(12px, 2vw, 32px);
+  bottom: clamp(12px, 2vw, 26px);
+  max-width: calc(100% - 150px);
+  margin: 0;
+  color: rgb(226 231 233 / 89%);
+  font: 400 clamp(12px, 0.85vw, 14px)/1.4 Arial, sans-serif;
+  text-shadow: 0 1px 3px #041521;
+}
+@media (max-width: 620px) {
+  .nuclear-film { min-height: 270px; }
+}
