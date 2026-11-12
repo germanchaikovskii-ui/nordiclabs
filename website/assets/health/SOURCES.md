@@ -74,3 +74,7 @@ Original AI-generated concept illustrations for Nordic Labs Tech Oy, 2026-11-11.
 ## connected-fitness.webp
 
 Original AI-generated seated-row illustration for Nordic Labs Tech Oy, 2026-11-11. The phone, generic exercise machine and virtual coach illustrate a possible future session.
+
+## workplace-team.webp
+
+Generated with OpenAI image generation for Corporate Health on 2026-11-12. Illustrative office team sharing lunch in a Nordic workplace.
