@@ -1,0 +1,63 @@
+{
+  "pages_compared": 20,
+  "text_replacements": 46,
+  "changed_pages": [
+    "nordic/website/robotics/index.html",
+    "nordic/website/health/corporate/index.html",
+    "nordic/website/health/esiva/index.html",
+    "nordic/website/health/api/index.html",
+    "nordic/website/industrial/nuclear/index.html",
+    "nordic/website/industrial/conventional/index.html",
+    "nordic/website/arc-engine/index.html",
+    "esiva/index.html",
+    "esiva/faq/index.html",
+    "esiva/support/index.html",
+    "esiva/merch/index.html"
+  ],
+  "legal_hashes": {
+    "nordic/website/privacy/index.html": "e5f45ae7176cce187448fdccceefa11783c94cf480f4de8e131996a2d3e58be3",
+    "nordic/website/terms/index.html": "5851a2a15db010863ec5e620eceb02f5bdf12b3255e5e40708b7956c211db813",
+    "esiva/privacy/index.html": "5f1e38bcc65919d317428e3da3cd4df0f29178d76b8256373b5528907b4fe638",
+    "esiva/terms/index.html": "761c342cb67f9c1a28ebe9a823b0590bcb47f6c620fde48231a1c1042b53f23a"
+  },
+  "checks": [
+    "All 20 HTML pages compared with saved originals",
+    "Only 46 reviewed text replacements across 11 pages",
+    "Raw HTML tags and attributes unchanged",
+    "All head/SEO, scripts, styles, links, buttons, navigation, headers, footers and forms unchanged",
+    "Four complete Terms/Privacy documents SHA-256 identical",
+    "Named legal, pilot, availability and medical notice blocks unchanged",
+    "All other tracked files identical to original commits, including logic, CSS, assets and Nordic maintenance files",
+    "git diff --check passed in both development branches"
+  ],
+  "branches": {
+    "nordic": "development/industrial-ai-website",
+    "esiva": "development/esiva-app-screenshots"
+  },
+  "baseline_commits": {
+    "nordic": "20b19231936d7fd2b68c6a67be0e5cfc6a3ce20f",
+    "esiva": "da6d67a3918cfe59518deff3677e64c24f7a0897"
+  },
+  "browser_checks": {
+    "viewports": [
+      {
+        "width": 1280,
+        "height": 820
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "pages_per_viewport": 11,
+    "horizontal_overflow": false,
+    "visual_spot_checks": [
+      "Conventional AI project entry section, desktop",
+      "ESIVA learning section, mobile",
+      "ARC research introduction, mobile",
+      "ESIVA expanded custom-workout FAQ, desktop"
+    ],
+    "interaction_check": "Custom-workout FAQ opens and displays the revised answer."
+  },
+  "delivery": "Saved in the existing development branches for backup. No merge, publication or deployment."
+}

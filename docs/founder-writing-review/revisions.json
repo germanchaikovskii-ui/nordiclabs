@@ -1,0 +1,232 @@
+[
+  {
+    "file": "nordic/website/robotics/index.html",
+    "before": "We integrate AI, drones and ground robotics into a connected inspection environment. Turn site observations into evidence against your requirements — during construction and throughout operation.",
+    "after": "We integrate AI, drones and ground robotics so site observations can be checked against your requirements during construction and throughout operation."
+  },
+  {
+    "file": "nordic/website/robotics/index.html",
+    "before": "Connect existing robots or define a suitable fleet with us. Begin with one site, one inspection route or one construction-monitoring workflow, then expand on the strength of the results.",
+    "after": "Connect existing robots or define a suitable fleet with us. Begin with one site, inspection route or construction-monitoring workflow, then use the results to assess whether to expand."
+  },
+  {
+    "file": "nordic/website/robotics/index.html",
+    "before": "Evaluate the benefits in a focused pilot using your inspection priorities and agreed measures of success.",
+    "after": "Use a focused pilot to evaluate the benefits against your inspection priorities and agreed measures of success."
+  },
+  {
+    "file": "nordic/website/robotics/index.html",
+    "before": "Connect the physical site to your information environment. Architecture, deployment and access can be defined around your infrastructure, equipment and operating procedures.",
+    "after": "Site observations need to reach the systems your team uses. Architecture, deployment and access can be defined around your infrastructure, equipment and operating procedures."
+  },
+  {
+    "file": "nordic/website/robotics/index.html",
+    "before": "Test a useful mission with your team and use the demonstrated outcome to decide on wider implementation.",
+    "after": "Test a mission with your team, then use its results to decide on wider implementation."
+  },
+  {
+    "file": "nordic/website/industrial/conventional/index.html",
+    "before": "An owner-controlled engineering environment connecting requirements, documents, equipment and operational knowledge. Start with a new industrial facility, a project in progress or a focused AI workflow in an existing production plant.",
+    "after": "An owner-controlled engineering environment brings together requirements, documents, equipment and operational knowledge. It can start with a new industrial facility, a project in progress or a focused AI workflow in an existing production plant."
+  },
+  {
+    "file": "nordic/website/industrial/conventional/index.html",
+    "before": "You do not need to start at the beginning of the lifecycle. We agree a useful first scope around your facility, available information and existing systems.",
+    "after": "We can begin at your facility’s current stage in the lifecycle. We agree a useful initial scope around your facility, available information and existing systems."
+  },
+  {
+    "file": "nordic/website/industrial/conventional/index.html",
+    "before": "These are entry points and areas of support, not a mandatory sequence. Start with the stage that matters now and extend the environment as value is demonstrated.",
+    "after": "Choose the area of support that fits your current stage. The entry points can be used in any order, with the environment extended as its value is demonstrated."
+  },
+  {
+    "file": "nordic/website/industrial/conventional/index.html",
+    "before": "We can join before design, during delivery or on an operating site. The first step is a usable baseline of your information and priorities.",
+    "after": "We can join before design, during delivery or on an operating site. We first establish what information is available and which priorities it needs to support."
+  },
+  {
+    "file": "nordic/website/industrial/conventional/index.html",
+    "before": "A defined workflow first, with benefits evaluated against your starting point and agreed success criteria.",
+    "after": "Begin with a defined workflow. Evaluate its benefits against your starting point and agreed success criteria."
+  },
+  {
+    "file": "nordic/website/industrial/conventional/index.html",
+    "before": "Assess a tangible result with the people who will use it, then decide whether and where to scale.",
+    "after": "Review the results with the people who will use the system, then decide whether and where to expand it."
+  },
+  {
+    "file": "nordic/website/industrial/nuclear/index.html",
+    "before": "From EPC signing, we build the owner’s engineering knowledge base: applicable requirements, supplier designs, equipment records and approval history. AI agents help your engineers review submissions and trace decisions through licensing, construction and operation.",
+    "after": "At EPC signing, we begin building the owner’s engineering knowledge base from applicable requirements, supplier designs, equipment records and approval history. AI agents use this information to help your engineers review submissions and trace decisions through licensing, construction and operation."
+  },
+  {
+    "file": "nordic/website/industrial/nuclear/index.html",
+    "before": "Every stage of the journey.",
+    "after": "Across the plant lifecycle."
+  },
+  {
+    "file": "nordic/website/industrial/nuclear/index.html",
+    "before": "The plans established before licensing become the owner’s day-to-day view of contract execution, work progress and acceptance.",
+    "after": "The owner uses the plans established before licensing to follow contract execution, work progress and acceptance during construction."
+  },
+  {
+    "file": "nordic/website/industrial/nuclear/index.html",
+    "before": "The architecture can support on-premises or controlled infrastructure deployment, role-based access, protected information flows and human-in-the-loop engineering review.",
+    "after": "The architecture can support deployment on premises or in controlled infrastructure, with role-based access and protected information flows. Engineers remain involved in reviewing the results."
+  },
+  {
+    "file": "nordic/website/health/esiva/index.html",
+    "before": "An individual’s history is more than a collection of measurements. ARC connects what happened, the surrounding context, the response and the subsequent outcome.",
+    "after": "To interpret an individual’s history, ARC connects each event with its context, the person’s response and the subsequent outcome."
+  },
+  {
+    "file": "nordic/website/health/esiva/index.html",
+    "before": "Reference knowledge provides a starting point. The individual’s observations and subsequent responses supply the context needed to evaluate and refine that starting point over time.",
+    "after": "Reference knowledge provides the starting point. Observations of the individual and their subsequent responses provide the context needed to evaluate and refine that starting point over time."
+  },
+  {
+    "file": "nordic/website/health/esiva/index.html",
+    "before": "The architecture separates the accumulated user context from the analytical tools that work with it. Models can evolve while the history, source relationships and feedback remain connected.",
+    "after": "The architecture keeps the accumulated user context separate from the analytical tools. This allows models to evolve while preserving the connections between history, sources and feedback."
+  },
+  {
+    "file": "nordic/website/health/api/index.html",
+    "before": "For each integration, we agree which fields the user authorizes for the purpose. Source and time travel with each observation so the analysis can reconstruct the sequence.",
+    "after": "For each integration, we agree which fields the user authorizes for the purpose. Each observation retains its source and time so the analysis can reconstruct the sequence."
+  },
+  {
+    "file": "nordic/website/health/api/index.html",
+    "before": "Repeated observations give a pattern more weight. Where the record is sparse, the result can identify the missing context and suggest a follow-up question.",
+    "after": "Repeated observations provide more evidence for a pattern. Where the record is sparse, the result can identify missing context and suggest a follow-up question."
+  },
+  {
+    "file": "nordic/website/health/corporate/index.html",
+    "before": "Explore ESIVA-based personal guidance as part of an employee wellbeing program, with a rollout designed around your people and their working day.",
+    "after": "An employee wellbeing program can use ESIVA to provide personal guidance. The rollout is designed around employees and their working day."
+  },
+  {
+    "file": "nordic/website/arc-engine/index.html",
+    "before": "Before ARC learned users,",
+    "after": "The research began"
+  },
+  {
+    "file": "nordic/website/arc-engine/index.html",
+    "before": "we had to learn the problem.",
+    "after": "with the problem ARC needed to address."
+  },
+  {
+    "file": "nordic/website/arc-engine/index.html",
+    "before": "ARC Engine starts with observed patterns, watches what happens in the individual, and earns personalization over time.",
+    "after": "ARC Engine starts with observed patterns, follows the individual’s responses and uses that evidence to personalize its guidance over time."
+  },
+  {
+    "file": "nordic/website/arc-engine/index.html",
+    "before": "A missing response is not automatically a contradiction. One unusual day is not automatically a pattern. Personalization should come from repeated evidence.",
+    "after": "A missing response leaves a gap in the evidence. An unusual day needs to be considered alongside other observations. Personalization should be based on repeated evidence."
+  },
+  {
+    "file": "esiva/index.html",
+    "before": "ESIVA connects your signals, food and training — helping you find your balance and anticipate hunger as your day changes.",
+    "after": "ESIVA connects your signals, food and training to help you manage your balance and anticipate hunger as the day changes."
+  },
+  {
+    "file": "esiva/index.html",
+    "before": "Meals, movement, training and recovery belong to one connected system. ESIVA uses the signals you share to adjust your daily plan and keep your calorie balance in view.",
+    "after": "Meals, movement, training and recovery affect one another. ESIVA uses the signals you share to adjust your daily plan and keep your calorie balance in view."
+  },
+  {
+    "file": "esiva/index.html",
+    "before": "Spot the signal early, plan ahead and make it easier to stay with the habits you are building.",
+    "after": "An early signal gives you time to plan your next step and stay with the habits you are building."
+  },
+  {
+    "file": "esiva/index.html",
+    "before": "ESIVA reads how you slept, how recovered you are and what your body has already been through — then builds a clear plan for today.",
+    "after": "ESIVA uses your sleep, recovery and recent activity to build today’s plan."
+  },
+  {
+    "file": "esiva/index.html",
+    "before": "Recovery changes the plan",
+    "after": "Your recovery helps determine"
+  },
+  {
+    "file": "esiva/index.html",
+    "before": "before fatigue becomes the plan.",
+    "after": "how demanding the plan should be."
+  },
+  {
+    "file": "esiva/index.html",
+    "before": "Weight trends, hunger, energy and training feedback become outcomes — not more charts you have to manage.",
+    "after": "ESIVA uses weight trends, hunger, energy and training feedback to assess the outcomes of your plan."
+  },
+  {
+    "file": "esiva/index.html",
+    "before": "What actually happened",
+    "after": "Your recorded outcomes"
+  },
+  {
+    "file": "esiva/index.html",
+    "before": "improves what happens next.",
+    "after": "help refine the next recommendation."
+  },
+  {
+    "file": "esiva/index.html",
+    "before": "so every action can improve the next recommendation.",
+    "after": "so each action can inform the next recommendation."
+  },
+  {
+    "file": "esiva/faq/index.html",
+    "before": "Training, food, recovery or a day that suddenly changed? ESIVA is designed to turn the moving parts into clear next steps.",
+    "after": "When food, training or recovery changes, the rest of your day may need to change too. ESIVA is designed to help you decide what to do next."
+  },
+  {
+    "file": "esiva/faq/index.html",
+    "before": "No. That is the point. ESIVA builds a daily direction from the information available to it and keeps updating the remaining plan as the day develops.",
+    "after": "No. ESIVA uses the available information to build your daily plan and updates the remaining plan as the day develops."
+  },
+  {
+    "file": "esiva/faq/index.html",
+    "before": "Then don't. ESIVA is guidance, not a cage. You can choose to create a custom session instead.",
+    "after": "You can choose to create a custom session instead of following the suggested workout."
+  },
+  {
+    "file": "esiva/faq/index.html",
+    "before": "The goal is not simply to make you train more, but to make the amount of work fit the day.",
+    "after": "The aim is to match the amount of training to the demands of the day."
+  },
+  {
+    "file": "esiva/faq/index.html",
+    "before": "The goal is to help you see what has been trained, how load is distributed and where attention may be useful next without making you interpret another wall of charts.",
+    "after": "This helps you see what has been trained, how load is distributed and which areas may need attention next."
+  },
+  {
+    "file": "esiva/faq/index.html",
+    "before": "Yes. ESIVA brings training load and relevant progress signals together so that progress is part of future decisions rather than only a historical report.",
+    "after": "Yes. ESIVA brings training load and relevant progress signals together so that recorded progress informs future decisions."
+  },
+  {
+    "file": "esiva/faq/index.html",
+    "before": "ESIVA is designed around what actually happened. A missed session should not remain frozen in the past as if it still happened; the remaining day can be replanned around the new reality.",
+    "after": "ESIVA is designed to account for a missed session when replanning the remaining day. The updated plan reflects what actually happened."
+  },
+  {
+    "file": "esiva/support/index.html",
+    "before": "Product question, technical problem or just something you want ESIVA to do better? Email is the easiest way to reach us.",
+    "after": "Email us with product questions, technical problems or suggestions for improving ESIVA."
+  },
+  {
+    "file": "esiva/merch/index.html",
+    "before": "Three black essentials. Your signature.",
+    "after": "Choose from three black essentials."
+  },
+  {
+    "file": "esiva/merch/index.html",
+    "before": "Pick your line. Put it on your T-shirt.",
+    "after": "Choose a slogan for your T-shirt."
+  },
+  {
+    "file": "esiva/merch/index.html",
+    "before": "Six ways to say it your way.",
+    "after": "Six designs to choose from."
+  }
+]
