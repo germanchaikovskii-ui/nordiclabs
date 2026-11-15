@@ -13,3 +13,7 @@ The user approved a new geometric N logo expressing three connected service stre
 - `V2-CREATION-NOTES.json`: original built-in generation prompts and source paths.
 
 The full lockup and emblem were copied from the approved deliverables. Icons are resized exports only. Legacy artwork above remains archived, unmodified; it is no longer referenced by development pages. Public maintenance and original ARC Engine files are unchanged.
+
+## Browser icon refresh — 15 November 2026
+
+All development pages now use `nordic-labs-favicon-20261115.png`, an unchanged copy of the approved 64 × 64 geometric N icon. The new filename refreshes browser favicon caches without changing the artwork. Touch-icon links also carry a new cache version. Archived branding and public maintenance files remain unchanged.
