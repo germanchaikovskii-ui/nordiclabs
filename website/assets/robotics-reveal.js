@@ -1,5 +1,5 @@
 (() => {
-  const items = [...document.querySelectorAll('.robotics-page .story-tasks li, .ref-stages li, .ref-cost-grid article')];
+  const items = [...document.querySelectorAll(':is(.robotics-page, .nuclear-page, .conventional-page) .story-tasks li, .ref-stages li, .ref-cost-grid article')];
   if (!items.length) return;
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   let observer;
