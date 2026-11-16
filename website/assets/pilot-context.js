@@ -6,6 +6,10 @@
     robotics: {department: 'robotics', label: 'Robotics AI', path: 'robotics/'}
   };
   const root = new URL('../../../', location.href);
+  if (new URLSearchParams(location.search).get('source') === 'robotics') {
+    location.replace(new URL('robotics/pilot/' + location.hash, root).href);
+    return;
+  }
   const source = sources[new URLSearchParams(location.search).get('source')];
   // Direct visits offer both departments rather than guessing a recipient.
   if (!source) return;
