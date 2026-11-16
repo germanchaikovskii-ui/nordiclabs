@@ -1,0 +1,12 @@
+/* Shared scroll reveal for Robotics and its reference journey. */
+.robotics-page .hero-actions{flex-wrap:wrap;gap:24px}
+/* Keep enlarged chapter copy in normal flow on every screen. */
+.robotics-page .story-stage,.story-ready:not(.story-static) .robotics-page .story-stage{height:auto!important}
+.robotics-page .story-scene{position:relative!important;top:auto!important;height:auto!important;min-height:650px!important}
+.robotics-page .story-content{height:auto!important;min-height:650px!important;padding-block:60px 85px!important}
+.robotics-page .story-image{transform:none!important}
+.robotics-page .scroll-cue,.robotics-page .scene-progress{display:none}
+.robotics-page .story-tasks li,.ref-stages li,.ref-cost-grid article{transition:opacity .55s ease,transform .55s ease!important}
+.robotics-page .story-tasks li{opacity:1!important;transform:none!important}
+.robotics-page .story-tasks li.reveal-waiting,.ref-stages li.reveal-waiting,.ref-cost-grid article.reveal-waiting{opacity:0!important;transform:translateY(18px)!important}
+@media(prefers-reduced-motion:reduce){.robotics-page .story-tasks li,.ref-stages li,.ref-cost-grid article{opacity:1!important;transform:none!important;transition:none!important}}

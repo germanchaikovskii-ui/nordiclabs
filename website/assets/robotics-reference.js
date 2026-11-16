@@ -138,9 +138,4 @@ document.querySelector('#proposal-link').href='mailto:robotics@nordiclabs.tech?s
 status.textContent=data.name+' selected. Configuration, implementation stages, cost context and proposal updated.';}
 document.querySelectorAll('[name="scenario"]').forEach(input=>input.addEventListener('change',()=>select(input.value)));
 select(document.querySelector('[name="scenario"]:checked').value);
-const motion=matchMedia('(prefers-reduced-motion: reduce)');let observer;
-function animate(){if(observer)observer.disconnect();document.querySelectorAll('.ref-stages li, .ref-cost-grid article').forEach(el=>el.classList.remove('ref-pending'));if(motion.matches||!('IntersectionObserver' in window))return;
-observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.remove('ref-pending');observer.unobserve(entry.target);}}),{threshold:0.08});
-document.querySelectorAll('.ref-stages li, .ref-cost-grid article').forEach(el=>{el.classList.add('ref-pending');observer.observe(el);});}
-motion.addEventListener('change',animate);animate();
 })();
