@@ -1,0 +1,3 @@
+.hero-actions{flex-wrap:wrap;gap:24px}.health-choices{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.health-costs article{grid-template-columns:1fr 2fr}.health-guard{padding-block:50px;border-block:1px solid #b8cbd1}.health-guard p{font-size:18px;max-width:1000px;line-height:1.65}.health-reference-bottom{padding-block:0 45px}.ref-stages h2 span{text-transform:none}@media(max-width:760px){.health-costs article{grid-template-columns:1fr}.health-choices{grid-template-columns:1fr}}
+
+.health-ref-link{display:inline-flex;margin:18px 0 0 24px;color:inherit}.service-contact .health-ref-link{color:#fff}@media(max-width:760px){.health-ref-link{margin-left:0;display:flex;width:fit-content}}

@@ -1,0 +1,38 @@
+{
+  "method": "Built-in image generation",
+  "style": "Natural photorealistic editorial workplace photography, neutral daylight; no personal data or futuristic graphics. Website adds illustrative disclaimers.",
+  "scenes": [
+    {
+      "key": "corporate-plan",
+      "prompt": "An HR programme lead and wellbeing consultant discussing a voluntary employee wellbeing programme at a bright Nordic office meeting table, printed programme calendar, no personal health records."
+    },
+    {
+      "key": "corporate-guidance",
+      "prompt": "Two adult office colleagues taking a relaxed outdoor walking break beside a modern office, one glancing at a smartphone, candid everyday wellbeing, no athletic competition."
+    },
+    {
+      "key": "corporate-team",
+      "prompt": "A diverse group of adult colleagues on an inclusive team walking challenge in an office courtyard, cheerful natural collaboration, no winners podium or body comparisons."
+    },
+    {
+      "key": "corporate-review",
+      "prompt": "HR and business analysts reviewing a simple aggregate participation trend chart on a monitor in a meeting room, no employee names or individual health scores, no legible text."
+    },
+    {
+      "key": "api-signals",
+      "prompt": "Two software product engineers mapping smartwatch and smartphone data inputs on paper at an office desk, devices beside laptop, no holograms."
+    },
+    {
+      "key": "api-exchange",
+      "prompt": "Software developers testing a service integration at two monitors showing generic structured JSON records and a simple data mapping diagram, no legible keys or credentials."
+    },
+    {
+      "key": "api-feedback",
+      "prompt": "A product designer and engineer reviewing a generic wellness application on a phone and response charts on a laptop, realistic office, no diagnostic claims."
+    },
+    {
+      "key": "api-volume",
+      "prompt": "A technology partnership manager and engineer reviewing a generic monthly API request volume chart and commercial worksheet at a meeting table, no currency figures or readable text."
+    }
+  ]
+}
