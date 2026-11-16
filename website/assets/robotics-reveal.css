@@ -10,3 +10,8 @@
 :is(.robotics-page, .nuclear-page, .conventional-page) .story-tasks li{opacity:1!important;transform:none!important}
 :is(.robotics-page, .nuclear-page, .conventional-page) .story-tasks li.reveal-waiting,.ref-stages li.reveal-waiting,.ref-cost-grid article.reveal-waiting{opacity:0!important;transform:translateY(18px)!important}
 @media(prefers-reduced-motion:reduce){:is(.robotics-page, .nuclear-page, .conventional-page) .story-tasks li,.ref-stages li,.ref-cost-grid article{opacity:1!important;transform:none!important;transition:none!important}}
+
+/* Nuclear also presents sequential points outside the lifecycle chapters. */
+.nuclear-page :is(.flow-party li,.specialist-agents article,.trace-chain li,.execution-steps li){transition:opacity .55s ease,transform .55s ease}
+.nuclear-page :is(.flow-party li,.specialist-agents article,.trace-chain li,.execution-steps li).reveal-waiting{opacity:0;transform:translateY(18px)}
+@media(prefers-reduced-motion:reduce){.nuclear-page :is(.flow-party li,.specialist-agents article,.trace-chain li,.execution-steps li){opacity:1!important;transform:none!important;transition:none!important}}
