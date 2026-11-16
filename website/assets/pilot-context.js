@@ -10,6 +10,10 @@
     location.replace(new URL('robotics/pilot/' + location.hash, root).href);
     return;
   }
+  if (new URLSearchParams(location.search).get('source') === 'nuclear') {
+    location.replace(new URL('industrial/nuclear/pilot/' + location.hash, root).href);
+    return;
+  }
   const source = sources[new URLSearchParams(location.search).get('source')];
   // Direct visits offer both departments rather than guessing a recipient.
   if (!source) return;
