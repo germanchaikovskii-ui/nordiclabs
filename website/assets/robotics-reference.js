@@ -9,13 +9,15 @@ const referenceSolutions = {
     "image": "construction-overview.webp",
     "alt": "Illustrative industrial construction site with digital monitoring",
     "stages": [
-      "Survey site access, flight constraints and inspection routes. Deliver an agreed scope and a baseline of schedule and BIM data.",
-      "Define the deployment architecture, network access and compute requirements for site imagery and progress records.",
-      "Deploy the reference drone and quadruped, configure capture routes and document operating procedures.",
-      "Map observations to BIM elements and Primavera P6 activities through agreed interfaces.",
-      "Configure progress checks and deviation reports. Validate results against agreed site evidence and acceptance criteria.",
-      "Commission the agreed workflows, train the responsible team and hand over operating documentation and support arrangements."
-    ]
+      "An agreed site scope, inspection routes and baseline BIM and schedule data.",
+      "A defined server, network and data-access setup for site imagery and progress records.",
+      "A drone and quadruped configured for agreed capture routes, with operating procedures.",
+      "Site observations linked to BIM elements and Primavera P6 activities through agreed interfaces.",
+      "Progress checks and deviation reports tested against site evidence and agreed acceptance criteria.",
+      "Commissioned workflows, team training and operating documentation, with agreed support."
+    ],
+    "area": "20,000 m²",
+    "siteLabel": "Industrial construction site"
   },
   "warehouse": {
     "name": "Warehouse AI",
@@ -27,13 +29,15 @@ const referenceSolutions = {
     "image": "fleet.webp",
     "alt": "Illustrative robotic fleet; equipment selection depends on the agreed warehouse scope",
     "stages": [
-      "Survey aisles, inventory identifiers and operating constraints. Deliver an agreed inspection scope and a baseline of WMS and ERP records.",
-      "Define compute, network coverage and data access for warehouse observations and inventory records.",
-      "Deploy the reference mobile robot and vision sensors, configure routes and document safe operating procedures.",
-      "Map observed items and locations to WMS and ERP records through agreed interfaces.",
-      "Configure inventory checks and discrepancy reporting. Validate observations against agreed inventory samples and acceptance criteria.",
-      "Commission warehouse workflows, train the operating team and hand over documentation and support arrangements."
-    ]
+      "An agreed aisle and inventory scope, with baseline WMS and ERP records.",
+      "A defined compute, network and data-access setup for inventory observations.",
+      "A mobile robot with vision sensors configured for agreed routes, with operating procedures.",
+      "Observed items and locations linked to WMS and ERP records through agreed interfaces.",
+      "Inventory checks and discrepancy reports tested against agreed samples and acceptance criteria.",
+      "Commissioned warehouse workflows, team training and documentation, with agreed support."
+    ],
+    "area": "10,000 m²",
+    "siteLabel": "Warehouse"
   },
   "manufacturing": {
     "name": "Manufacturing AI",
@@ -45,62 +49,64 @@ const referenceSolutions = {
     "image": "inspection.webp",
     "alt": "Illustrative robotic inspection of industrial equipment",
     "stages": [
-      "Survey equipment, inspection points and operating constraints. Deliver an agreed inspection scope and baseline of available production and maintenance records.",
-      "Define compute, network segmentation and access requirements for inspection and process data.",
-      "Deploy the reference quadruped and selected sensors, configure inspection routes and document operating procedures.",
-      "Map inspection observations to MES, SCADA and CMMS records through agreed interfaces.",
-      "Configure inspection checks and anomaly reporting. Validate findings against agreed equipment evidence and acceptance criteria.",
-      "Commission inspection workflows, train the responsible team and hand over operating documentation and support arrangements."
-    ]
+      "An agreed equipment and inspection scope, with baseline production and maintenance records.",
+      "A defined compute, network and data-access setup for inspection and process data.",
+      "A quadruped and selected sensors configured for inspection routes, with operating procedures.",
+      "Inspection observations linked to MES, SCADA and CMMS records through agreed interfaces.",
+      "Inspection checks and anomaly reports tested against equipment evidence and agreed acceptance criteria.",
+      "Commissioned inspection workflows, team training and documentation, with agreed support."
+    ],
+    "area": "5,000 m²",
+    "siteLabel": "Production facility"
   }
 };
 const referenceCostComponents = [
   {
-    "component": "Assessment and engineering",
-    "rental": "One-time scope and engineering fee, as agreed.",
-    "purchase": "One-time scope and engineering fee.",
+    "component": "Assessment & engineering",
+    "rental": "One-time scope fee",
+    "purchase": "One-time scope fee",
     "prices": null
   },
   {
-    "component": "Server infrastructure or customer-provided compute",
-    "rental": "Supplied hardware under the service agreement, or customer-provided compute.",
-    "purchase": "Customer-owned supplied hardware, or customer-provided compute.",
+    "component": "Server & compute",
+    "rental": "Supplied under service agreement¹",
+    "purchase": "Owned hardware or your compute¹",
     "prices": null
   },
   {
-    "component": "Robots, drones and sensors",
-    "rental": "Recurring equipment rental under the agreed service scope.",
-    "purchase": "One-time acquisition of customer-owned equipment.",
+    "component": "Robots & sensors",
+    "rental": "Recurring equipment rental",
+    "purchase": "Customer-owned equipment",
     "prices": null
   },
   {
-    "component": "Installation and commissioning",
-    "rental": "One-time setup, or included in the recurring agreement if agreed.",
-    "purchase": "One-time installation and commissioning.",
+    "component": "Installation",
+    "rental": "Setup fee or included, as agreed",
+    "purchase": "One-time commissioning",
     "prices": null
   },
   {
-    "component": "Enterprise software integration",
-    "rental": "One-time integration scope; ongoing changes priced separately as agreed.",
-    "purchase": "One-time integration scope; ongoing changes priced separately as agreed.",
+    "component": "Systems integration",
+    "rental": "Initial integration scope²",
+    "purchase": "Initial integration scope²",
     "prices": null
   },
   {
-    "component": "AI configuration and validation",
-    "rental": "Initial configuration and validation; recurring services as agreed.",
-    "purchase": "One-time configuration and validation; subsequent changes as agreed.",
+    "component": "AI validation",
+    "rental": "Initial setup + agreed services²",
+    "purchase": "Initial setup + agreed changes²",
     "prices": null
   },
   {
     "component": "Software licensing",
-    "rental": "Recurring service and licensing charges as agreed.",
-    "purchase": "Licensing terms and any recurring fees specified in the agreement.",
+    "rental": "Recurring agreed fees",
+    "purchase": "Agreed licence and recurring fees",
     "prices": null
   },
   {
-    "component": "Maintenance, support and updates",
-    "rental": "Recurring managed-service scope as agreed.",
-    "purchase": "Optional service contracts; equipment responsibilities defined at handover.",
+    "component": "Support & updates",
+    "rental": "Agreed recurring service",
+    "purchase": "Optional service contract",
     "prices": null
   }
 ];
@@ -128,14 +134,13 @@ const status=document.querySelector('#selection-status');
 function select(key){const data=referenceSolutions[key]; if(!data)return;
 document.querySelectorAll('[data-field]').forEach(el=>el.textContent=data[el.dataset.field]);
 document.querySelectorAll('[data-stage]').forEach(el=>el.textContent=data.stages[Number(el.dataset.stage)]);
-const image=document.querySelector('#scenario-image');image.src='../../assets/robotics/'+data.image;image.alt=data.alt;
 document.querySelector('#proposal-link').href='mailto:robotics@nordiclabs.tech?subject='+encodeURIComponent(data.name+' tailored proposal')+'&body='+encodeURIComponent('Reference: '+data.scope+'\nFleet: '+data.fleet+'\nSystems: '+data.integration+'\n\nPlease describe your site, priorities and preferred commercial model:');
 status.textContent=data.name+' selected. Configuration, implementation stages, cost context and proposal updated.';}
 document.querySelectorAll('[name="scenario"]').forEach(input=>input.addEventListener('change',()=>select(input.value)));
 select(document.querySelector('[name="scenario"]:checked').value);
 const motion=matchMedia('(prefers-reduced-motion: reduce)');let observer;
-function animate(){if(observer)observer.disconnect();document.querySelectorAll('.ref-stages li').forEach(el=>el.classList.remove('ref-pending'));if(motion.matches||!('IntersectionObserver' in window))return;
+function animate(){if(observer)observer.disconnect();document.querySelectorAll('.ref-stages li, .ref-cost-grid article').forEach(el=>el.classList.remove('ref-pending'));if(motion.matches||!('IntersectionObserver' in window))return;
 observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.remove('ref-pending');observer.unobserve(entry.target);}}),{threshold:0.08});
-document.querySelectorAll('.ref-stages li').forEach(el=>{el.classList.add('ref-pending');observer.observe(el);});}
+document.querySelectorAll('.ref-stages li, .ref-cost-grid article').forEach(el=>{el.classList.add('ref-pending');observer.observe(el);});}
 motion.addEventListener('change',animate);animate();
 })();
