@@ -10,6 +10,18 @@
   const phaseNav = document.querySelector('.phase-nav');
   const navigation = [...document.querySelectorAll('.phase-nav a')];
   const data = chapters.map(chapter => ({chapter, tasks:[...chapter.querySelectorAll('.story-tasks li')]}));
+  const sharedReveal = document.body.matches('.nuclear-page, .conventional-page, .robotics-page');
+  let activeChapter = -1;
+  function updateNavigation(active) {
+    if (active === activeChapter) return;
+    activeChapter = active;
+    navigation.forEach(link => {
+      const current = link.hash === `#${chapters[active].id}`;
+      link.classList.toggle('active', current);
+      if (current) link.setAttribute('aria-current', 'step');
+      else link.removeAttribute('aria-current');
+    });
+  }
   let showAll = reduced.matches;
   let pending = false;
   const clamp = value => Math.max(0, Math.min(1, value));
@@ -17,6 +29,17 @@
     pending = false;
     const viewportHeight = document.documentElement.clientHeight;
     const top = header.getBoundingClientRect().height + phaseNav.getBoundingClientRect().height;
+    if (sharedReveal) {
+      // IntersectionObserver owns bullet reveals. Do not run the old per-frame
+      // style writes and layout measurements for the retired sticky animation.
+      const positions = chapters.map(chapter => chapter.getBoundingClientRect().top);
+      let active = 0;
+      positions.forEach((position, index) => {
+        if (position <= top + viewportHeight * .2) active = index;
+      });
+      updateNavigation(active);
+      return;
+    }
     const available = Math.max(1, viewportHeight - top);
     story.style.setProperty('--scene-top', `${top}px`);
     story.style.setProperty('--scene-height', `${available}px`);

@@ -34,3 +34,5 @@
   .integration-window:is(:hover, :focus-within) .integration-track { animation-play-state: paused; }
 }
 @keyframes integration-scroll { to { transform: translateX(-50%); } }
+
+.integrations.scrolling.animation-idle .integration-track{animation-play-state:paused}

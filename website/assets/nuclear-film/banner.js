@@ -9,6 +9,7 @@
   let userPaused = false;
   let userRequestedPlay = false;
   let playPending = false;
+  let inView = true;
   // Set media properties before the first attempt, including on restored pages.
   video.muted = true;
   video.defaultMuted = true;
@@ -30,12 +31,13 @@
   }
 
   function play() {
-    if (playPending || !video.paused || userPaused || document.hidden ||
+    if (playPending || !video.paused || userPaused || document.hidden || !inView ||
         (motion.matches && !userRequestedPlay) || video.error) return;
     video.muted = true;
     playPending = true;
     Promise.resolve(video.play()).catch(updateControl).finally(() => {
       playPending = false;
+      if (document.hidden || !inView) video.pause();
       updateControl();
     });
   }
@@ -73,7 +75,17 @@
   video.addEventListener("loadeddata", play);
   video.addEventListener("canplay", play);
   window.addEventListener("pageshow", play);
-  document.addEventListener("visibilitychange", play);
+  function syncPlayback() {
+    if (document.hidden || !inView) video.pause();
+    else play();
+  }
+  document.addEventListener("visibilitychange", syncPlayback);
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(entries => {
+      inView = entries[0].isIntersecting;
+      syncPlayback();
+    }, {rootMargin: '100px 0px'}).observe(banner);
+  }
   // Some mobile browsers require interaction even for muted inline video.
   document.addEventListener("pointerdown", event => {
     if (!control.contains(event.target)) play();
