@@ -1,0 +1,30 @@
+{
+  "method": "Built-in image generation",
+  "style": "Photorealistic industrial editorial photography. Neutral natural light, credible present-day workplaces; no robots, drones, holograms or floating UI. Website overlays illustrative reference disclaimer.",
+  "scenes": [
+    {
+      "key": "scope",
+      "prompt": "Two engineering consultants and a customer project manager reviewing a printed process map, document register and construction schedule in a practical site office overlooking an industrial facility. One navy jacket has a small Nordic Labs Tech Oy text patch."
+    },
+    {
+      "key": "hosting",
+      "prompt": "An IT engineer configuring a rack server in a clean ordinary enterprise server room, laptop nearby, realistic cables and hardware."
+    },
+    {
+      "key": "connect",
+      "prompt": "An integration engineer and a document controller at two monitors in a modern industrial office. Screens show generic document registers, procurement tables and warehouse records, no readable text or brand logos."
+    },
+    {
+      "key": "configure",
+      "prompt": "A project engineer reviewing engineering drawings and requirement checklists with a software specialist at a desk, engineering document on paper alongside a computer showing a restrained generic structured review."
+    },
+    {
+      "key": "validate",
+      "prompt": "A construction planner and procurement manager comparing printed delivery records, warehouse material lists and a project schedule in a site office. Careful human verification of matching records, industrial site through window."
+    },
+    {
+      "key": "handover",
+      "prompt": "A Nordic Labs Tech Oy consultant wearing a navy shirt with small text patch training customer engineering and operations staff around a large monitor with a generic project reporting dashboard. Professional calm collaboration in a real office."
+    }
+  ]
+}
