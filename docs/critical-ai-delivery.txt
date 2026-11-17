@@ -1,0 +1,85 @@
+Critical Infrastructure AI — implementation report
+
+Base: development/industrial-ai-website at 1caa9c4 (local development baseline).
+Feature: feature/critical-infrastructure-ai
+Worktree: /Users/germanchaikovskii/Documents/ChatGPT/NordicLabs website creation/critical-infrastructure-ai
+
+Routes:
+/critical/
+/critical/reference-solutions/
+/critical/pilot/
+Preview home: http://127.0.0.1:8082/
+
+Implementation:
+Four homepage directions in two spacious diagonal pairs; fourth direction in shared desktop/mobile headers and footers on all 24 development pages. Contact topic added. All Critical AI contact links use critical@nordiclabs.tech; general contact remains info.
+Landing: original-speed video with scene captions and dark backing; illustrative integration-logo strip; dependency map; engineering lifecycle; six solution areas; data center focus; industries; three engagement stages; business value and contact.
+Reference solutions: data center, utility assets and enterprise resilience examples; deployment choices; scoped deliverables and commercial discussion.
+Pilot: eight connected scroll stages from scope and dependencies through private deployment, signals, baseline, findings, resilience review and evaluation. Illustrative scope and written-agreement wording retained.
+Three new generated infrastructure images, unique vector diagrams, local logos and responsive video encodes. Asset sources and complete generation prompts: website/assets/critical/SOURCES.txt.
+
+Validation executed:
+python3 tools/validate-critical.py — PASS: 24 HTML pages, local links/assets/anchors, SVG parsing, shared four-direction navigation, unchanged existing service main content, unchanged legal bodies and production files.
+git diff --check — PASS.
+ruby -c tools/preview-critical.rb — Syntax OK.
+JavaScript syntax checks for critical, video banner, pilot journey and integration scripts — PASS.
+Reduced-motion behavior tested in isolated mocked script environments for reveal and video scripts; not a physical-device reduced-motion test.
+Browser checks at desktop 1280, tablet 768 and mobile 390: navigation, links and no horizontal overflow. Refined pilot baseline diagram inspected. New dependency SVG loads. Captured browser error log empty during final three-page tablet pass.
+Video autoplay, original playback rate 1, mobile source selection and offscreen pause checked. Both encodes retain original duration 41.333333 seconds.
+Buildless static website: no package build stage exists.
+Production maintenance files and legal text bodies remain unchanged. Legal page navigation only gained the fourth direction. No deployment or merge.
+
+Limitations:
+Integration names indicate illustrative technical possibilities, not partnerships or delivered integrations. Final compatibility and scope require project assessment. No missing supplied media. Browser checks are representative, not exhaustive physical-device testing. Browser autoplay remains subject to user/device policy; existing playback controls and poster retained.
+
+Exact local preview command:
+cd "/Users/germanchaikovskii/Documents/ChatGPT/NordicLabs website creation/critical-infrastructure-ai"
+ruby tools/preview-critical.rb
+
+Commit: delivered in feature branch; see git log -1. Remote HEAD verification reported in final response.
+
+Files created/modified:
+tools/preview-critical.rb
+tools/validate-critical.py
+website/assets/critical-film/critical-480.mp4
+website/assets/critical-film/critical-720.mp4
+website/assets/critical-film/poster.jpg
+website/assets/critical.css
+website/assets/critical.js
+website/assets/critical/SOURCES.txt
+website/assets/critical/datacenter.webp
+website/assets/critical/dependencies.svg
+website/assets/critical/logos/cisco.svg
+website/assets/critical/logos/grafana.svg
+website/assets/critical/logos/prometheus.svg
+website/assets/critical/logos/schneiderelectric.svg
+website/assets/critical/logos/siemens.svg
+website/assets/critical/network.webp
+website/assets/critical/operations.webp
+website/critical/index.html
+website/critical/pilot/index.html
+website/critical/reference-solutions/index.html
+website/README.md
+website/arc-engine/index.html
+website/assets/home-gateway.css
+website/assets/site-chrome.css
+website/contact/index.html
+website/health/api/index.html
+website/health/api/reference-solutions/index.html
+website/health/corporate/index.html
+website/health/corporate/reference-solutions/index.html
+website/health/esiva/index.html
+website/health/index.html
+website/index.html
+website/industrial/conventional/index.html
+website/industrial/conventional/pilot/index.html
+website/industrial/conventional/reference-solutions/index.html
+website/industrial/index.html
+website/industrial/nuclear/index.html
+website/industrial/nuclear/pilot/index.html
+website/industrial/nuclear/reference-solutions/index.html
+website/privacy/index.html
+website/robotics/index.html
+website/robotics/pilot/index.html
+website/robotics/reference-solutions/index.html
+website/terms/index.html
+docs/critical-ai-delivery.txt

@@ -1,0 +1,28 @@
+Critical Infrastructure AI assets — 17 November 2026
+
+Three new illustrations generated with the built-in image generation tool, then optimized to WebP. They are illustrative concepts, not customer or project photographs. The original generated files remain in the user's generated_images directory. No existing business-vertical photo was reused for Critical AI.
+
+network.webp
+Prompt: Create a new cinematic editorial infrastructure photograph for Nordic Labs Tech Oy Critical Infrastructure AI website. Ultra wide landscape 16:9. Realistic Nordic coastal infrastructure district at blue hour: a modern data center in foreground right, electrical substation and transmission lines in middle ground, rail freight corridor and a telecommunications mast in the distance. Infrastructure appears grounded and physically plausible, connected by subtle thin teal light paths, no floating dashboards, no people, no robots, no science fiction, no text, no logos. Navy, muted steel blue and warm practical lights, restrained teal accents. Premium architectural photography with detailed materials, not glossy artificial CGI. Clear silhouettes and open darker space at left for website text overlay. Produce one image.
+
+datacenter.webp
+Prompt: Use case: photorealistic-natural. Asset type: wide 16:9 website section photograph, Critical Infrastructure AI engineering. Create a new realistic photograph looking down a modern data-center service aisle with server racks on one side and physically separate power and network paths overhead, redundant cable trays in muted teal and grey, precise industrial architecture. No people, no logos, no text, no imaginary holograms. Dark navy and steel blue palette, warm small equipment indicator lights and subtle teal highlights. A credible architectural documentary photo, detailed and calm. Wide composition, subjects distributed toward right, space at left for overlay. Must be distinct from an outdoor infrastructure panorama.
+
+operations.webp
+Prompt: Create a premium realistic architectural editorial photograph, wide 16:9, of a critical infrastructure operations center at twilight. No people. Foreground: one clean engineering desk with a wide monitor displaying an abstract restrained topology diagram of linked infrastructure, no readable words or numerical claims. Through large glass windows a substation and industrial district visible out of focus. Modern practical control room, grounded engineering, navy/steel blue and soft teal accents, warm practical lights, calm trustworthy documentary appearance. No robots, no brand logos, no sci-fi floating UI. This is a website illustration of monitoring and review, with usable dark areas for text overlay.
+
+Originals: exec-c5b4978a-fa49-4133-b12f-155fcdac5827.png; exec-26d40763-4912-44a7-bfe4-572da559f581.png; exec-06a86980-61f5-4e7c-b673-e9853d014fc8.png.
+
+Video: user-supplied critical.mp4 in NLT CRITICAL. Original duration 41.333333 seconds. Web versions: H.264, 1280x720 and 852x480, unchanged speed and duration, no audio. Poster extracted at 1 second. Captions follow inspected frames at approximately 0, 6, 10, 15, 20, 25, 30 and 36 seconds. No video was generated or substituted.
+
+Logos: official brand marks distributed in Simple Icons v14, downloaded from https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/{slug}.svg. Slugs: siemens, schneiderelectric, cisco, grafana, prometheus. Marks belong to their owners. Displayed for identification only, not endorsement, partnership or a claim of an implemented connector. No logo was AI-generated.
+
+Interface evidence checked on 17 November 2026:
+Siemens Building X: https://developer.siemens.com/building-x-openness/dev-guide/integration-guide.html
+Schneider Electric SmartConnector / EBO REST gateway: https://github.com/SchneiderElectricBuildings/SmartConnector/blob/main/docs/developer-guide/smartconnector-restful-ews-gateway.md
+Cisco Catalyst Center: https://developer.cisco.com/docs/catalyst-center/getting-started/
+Grafana API: https://grafana.com/docs/grafana/latest/developer-resources/api-reference/
+Prometheus API: https://prometheus.io/docs/prometheus/latest/querying/api/
+These sources document available interfaces, not compatibility with a specific Nordic Labs deployment. Version, access, licensing, security boundaries and project fit must be assessed separately.
+
+Dependencies.svg and pilot graphics: new code-native vector illustrations created for this direction. They are conceptual examples, not live data or a final architecture.

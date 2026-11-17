@@ -53,3 +53,18 @@ Contacts prepare a visible email draft addressed to info@nordiclabs.tech. The us
 ## Approved logo rollout — 9 November 2026
 
 The new geometric N emblem appears in the header and footer on all ten development pages. Matching 64-pixel browser icons and 180-pixel touch icons use the approved artwork; full logo and generation provenance are retained in assets/brand. The company name remains Nordic Labs Tech Oy. All ten pages were checked at 320-pixel width with no horizontal overflow; desktop home was visually verified at 1280 pixels. Logo home navigation and the mobile menu work, and no console errors or warnings were observed. Local asset/link checks pass. Legacy artwork, public maintenance files, CNAME and protected branches remain unchanged.
+
+## Critical Infrastructure AI — 17 November 2026
+
+Isolated feature branch: `feature/critical-infrastructure-ai`, based on local `development/industrial-ai-website` at `1caa9c4` (including the latest pilot work).
+
+New development routes:
+- `/critical/` — video, potential integrations, engineering approach, six solution areas, application sectors, delivery model and contact.
+- `/critical/reference-solutions/` — illustrative data center, utility asset and enterprise service configurations.
+- `/critical/pilot/` — eight-step interactive pilot build, using the shared cable animation with new graphics and content.
+
+Homepage: four areas in two diagonal desktop/tablet pairs, stacked on mobile. Shared header/footer include Critical AI on all 24 development pages. Contact form includes Critical Infrastructure AI; mail drafts remain addressed to info@nordiclabs.tech. Legal body text is unchanged.
+
+Preview from this checkout: `ruby tools/preview-critical.rb`, then http://127.0.0.1:8082/. This uses only a loopback listener and disables caching for review. Keep maintenance hosting unchanged.
+
+Static checks: `python3 tools/validate-critical.py` and `git diff --check`. This project has no package install or build step. New image prompts, logo/interface references and video provenance are in `assets/critical/SOURCES.txt`.
