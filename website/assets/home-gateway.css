@@ -63,3 +63,11 @@
 .home-panel h2{font-size:38px}.home-panel-number{font-size:10px}.home-panel-action{font-size:14px;max-width:290px}
 .home-panel+.home-panel{border-top:1px solid #3a5c67}.home-title h1{font-size:38px}
 }
+
+/* Homepage order: Industrial, Robotics, Critical, Health. */
+@media(min-width:761px){
+.home-critical{left:45.5%;width:34%;clip-path:polygon(26.470588% 0,100% 0,73.529412% 100%,0 100%)}
+.home-health{left:70.5%;width:29.5%;clip-path:polygon(30.508475% 0,100% 0,100% 100%,0 100%)}
+.home-critical .home-panel-copy{left:25%;width:55%}
+.home-health .home-panel-copy{left:32%;width:64%}
+}
