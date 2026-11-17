@@ -26,3 +26,9 @@ Prometheus API: https://prometheus.io/docs/prometheus/latest/querying/api/
 These sources document available interfaces, not compatibility with a specific Nordic Labs deployment. Version, access, licensing, security boundaries and project fit must be assessed separately.
 
 Dependencies.svg and pilot graphics: new code-native vector illustrations created for this direction. They are conceptual examples, not live data or a final architecture.
+
+Animated infrastructure world map (2026-11-17)
+Land outlines: Natural Earth, 1:110m land, public-domain geographic data.
+Source: https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_land.geojson
+Local derivative: world-land.svg; equirectangular projection, Antarctica omitted for composition.
+Signals and server symbols: original code-native SVG/CSS; illustrative land locations with randomized order and nearby offsets. No live facility or incident data.
