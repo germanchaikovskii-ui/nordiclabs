@@ -1,6 +1,6 @@
 const referenceSolutions = {
   "construction": {
-    "name": "Construction AI",
+    "name": "Construction",
     "title": "Automated Construction Progress Monitoring",
     "scope": "Industrial construction site: 20,000 m²",
     "fleet": "1 drone and 1 quadruped robot",
@@ -20,7 +20,7 @@ const referenceSolutions = {
     "siteLabel": "Industrial construction site"
   },
   "warehouse": {
-    "name": "Warehouse AI",
+    "name": "Warehouse",
     "title": "Autonomous Warehouse Intelligence",
     "scope": "Warehouse: 10,000 m²",
     "fleet": "1 autonomous mobile robot with vision sensors",
@@ -40,7 +40,7 @@ const referenceSolutions = {
     "siteLabel": "Warehouse"
   },
   "manufacturing": {
-    "name": "Manufacturing AI",
+    "name": "Manufacturing",
     "title": "Autonomous Production Intelligence",
     "scope": "Production facility: 5,000 m²",
     "fleet": "1 quadruped inspection robot with appropriate sensors",
@@ -92,7 +92,7 @@ const referenceCostComponents = [
     "prices": null
   },
   {
-    "component": "AI validation",
+    "component": "Output validation",
     "rental": "Initial setup + agreed services²",
     "purchase": "Initial setup + agreed changes²",
     "prices": null

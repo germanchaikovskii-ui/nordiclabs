@@ -1,9 +1,9 @@
 (() => {
   // Explicit source in the URL survives reloads and keeps separate tabs independent.
   const sources = {
-    conventional: {department: 'industrial', label: 'Industrial AI', path: 'industrial/conventional/'},
-    nuclear: {department: 'industrial', label: 'Industrial AI', path: 'industrial/nuclear/'},
-    robotics: {department: 'robotics', label: 'Robotics AI', path: 'robotics/'}
+    conventional: {department: 'industrial', label: 'Industrial', path: 'industrial/conventional/'},
+    nuclear: {department: 'industrial', label: 'Industrial', path: 'industrial/nuclear/'},
+    robotics: {department: 'robotics', label: 'Robotics', path: 'robotics/'}
   };
   const root = new URL('../../../', location.href);
   if (new URLSearchParams(location.search).get('source') === 'robotics') {

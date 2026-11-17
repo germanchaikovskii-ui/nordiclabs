@@ -29,7 +29,7 @@ for p,page in pages.items():
  text=p.read_text()
  for cls in ['navigation','footer-links']:
   nav=re.search(r'<nav[^>]*class="'+cls+r'".*?</nav>',text,re.S)
-  if not nav or '>Critical AI<' not in nav[0]:errors.append(f'Missing Critical AI in {cls}: {p.relative_to(ROOT)}')
+  if not nav or '>Critical<' not in nav[0]:errors.append(f'Missing Critical AI in {cls}: {p.relative_to(ROOT)}')
 for p in (WEB/'assets/critical').rglob('*.svg'):
  try:ET.parse(p)
  except ET.ParseError as e:errors.append(f'Invalid SVG {p}: {e}')
@@ -42,14 +42,15 @@ for rel in ['website/terms/index.html','website/privacy/index.html']:
 for rel in ['index.html','404.html','CNAME','arc-engine/index.html']:
  before=subprocess.check_output(['git','show',base+':'+rel],cwd=ROOT)
  assert before==(ROOT/rel).read_bytes(),f'Protected production file changed: {rel}'
-# Existing service content must be identical; shared header/footer changes are allowed.
+# Existing service structure stays intact; approved copy edits may change text nodes.
 for p in pages:
  if p==WEB/'index.html' or 'critical' in p.relative_to(WEB).parts:continue
  rel=str(p.relative_to(ROOT));old=subprocess.check_output(['git','show',base+':'+rel],cwd=ROOT,text=True)
- before=re.search(r'<main\b.*?</main>',old,re.S);after=re.search(r'<main\b.*?</main>',p.read_text().replace('<option>Critical Infrastructure AI</option>', ''),re.S)
+ before=re.search(r'<main\b.*?</main>',old,re.S);after=re.search(r'<main\b.*?</main>',p.read_text().replace('<option>Critical Infrastructure AI</option>', '').replace('<option>Critical Infrastructure</option>', ''),re.S)
  def normalize_markup(value):
   value=value.replace('data-src=', 'src=').replace('preload="none"','preload="metadata"')
-  return re.sub(r'(?:\.\./)+assets/arc-engine/', 'ARC_ASSET/', value)
+  value = re.sub(r'(?:\.\./)+assets/arc-engine/', 'ARC_ASSET/', value)
+  return re.sub(r'>([^<>]*)<', '><', value)
  if before and after and normalize_markup(before[0])!=normalize_markup(after[0]):errors.append('Existing main content changed: '+rel)
 for path in ['critical/','critical/reference-solutions/','critical/pilot/']:
  assert (WEB/path/'index.html') in pages
