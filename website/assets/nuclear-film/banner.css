@@ -45,8 +45,7 @@
   pointer-events: none;
   inset: -.65em -.8em;
   border-radius: .6em;
-  background: rgb(2 12 20 / 90%);
-  filter: blur(.43em);
+  background: radial-gradient(ellipse at center, #020c14f5 30%, #020c14d9 60%, #020c1400 74%);
 }
 .nuclear-film-copy span {
   display: block;

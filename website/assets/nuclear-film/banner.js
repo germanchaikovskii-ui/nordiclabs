@@ -10,12 +10,34 @@
   let userRequestedPlay = false;
   let playPending = false;
   let inView = true;
+  const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+  const limitedConnection = () => Boolean(connection && (connection.saveData || /(^|-)2g$|^3g$/.test(connection.effectiveType || '') || (connection.downlink > 0 && connection.downlink < 1.5)));
+  let posterOnly = limitedConnection();
+  let loaded = false;
+  let startupTimer;
+  function unload() {
+    clearTimeout(startupTimer);
+    video.pause();
+    video.querySelectorAll('source').forEach(source => source.removeAttribute('src'));
+    video.load();
+    loaded = false;
+  }
+  function loadSources() {
+    if (loaded) return;
+    video.querySelectorAll('source[data-src]').forEach(source => { source.src = source.dataset.src; });
+    loaded = true;
+    video.load();
+    // An unknown/slow connection should not keep downloading a stalled banner.
+    if (!userRequestedPlay) startupTimer = setTimeout(() => {
+      if (video.readyState < 3) { posterOnly = true; unload(); updateControl(); }
+    }, 8000);
+  }
   // Set media properties before the first attempt, including on restored pages.
   video.muted = true;
   video.defaultMuted = true;
   video.playsInline = true;
-  video.preload = "metadata";
-  video.autoplay = !motion.matches;
+  video.preload = "none";
+  video.autoplay = false;
 
   function updateCaption() {
     const next = cues.findLast(cue => Number(cue.dataset.start) <= video.currentTime) || cues[0];
@@ -27,12 +49,13 @@
   }
 
   function updateControl() {
-    control.textContent = video.paused ? "Play video" : "Pause video";
+    control.textContent = video.paused ? (posterOnly ? "Load video" : "Play video") : "Pause video";
   }
 
   function play() {
     if (playPending || !video.paused || userPaused || document.hidden || !inView ||
-        (motion.matches && !userRequestedPlay) || video.error) return;
+        ((motion.matches || posterOnly) && !userRequestedPlay) || video.error) return;
+    loadSources();
     video.muted = true;
     playPending = true;
     Promise.resolve(video.play()).catch(updateControl).finally(() => {
@@ -54,6 +77,7 @@
       video.pause();
     }
   });
+  video.addEventListener("playing", () => clearTimeout(startupTimer));
   video.addEventListener("timeupdate", updateCaption);
   video.addEventListener("seeked", updateCaption);
   video.addEventListener("play", updateControl);
@@ -66,7 +90,7 @@
   });
   motion.addEventListener("change", () => {
     userRequestedPlay = false;
-    video.autoplay = !motion.matches && !userPaused;
+    video.autoplay = false;
     if (motion.matches) video.pause();
     else play();
   });
@@ -80,11 +104,17 @@
     else play();
   }
   document.addEventListener("visibilitychange", syncPlayback);
+  connection?.addEventListener?.('change', () => {
+    posterOnly = limitedConnection();
+    if (posterOnly && !userRequestedPlay) unload();
+    else play();
+    updateControl();
+  });
   if ('IntersectionObserver' in window) {
     new IntersectionObserver(entries => {
       inView = entries[0].isIntersecting;
       syncPlayback();
-    }, {rootMargin: '100px 0px'}).observe(banner);
+    }, {rootMargin: '0px'}).observe(banner);
   }
   // Some mobile browsers require interaction even for muted inline video.
   document.addEventListener("pointerdown", event => {

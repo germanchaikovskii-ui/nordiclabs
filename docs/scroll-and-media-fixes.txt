@@ -1,0 +1,18 @@
+Scroll and media corrections — 2026-11-17
+
+Confirmed issues and changes:
+- Legacy lifecycle script still measured every chapter/header/navigation on scroll for Industrial and Robotics. Normal-flow pages now use IntersectionObserver for chapter selection, with no legacy scroll listener or per-frame layout reads. Existing point-by-point reveal remains.
+- Shared reveal initialization interleaved geometry reads and style writes. Positions are now measured together before hiding items.
+- Every video banner used a large blurred backing above moving video. Replaced the blur filter with a soft radial gradient; readability and fading edges retained.
+- Personal Health and ARC research image URLs traversed outside the preview document root. Copied the original ARC assets into the development site's assets folder and corrected URLs. Production assets unchanged. The validator now rejects resources outside the web root, including deferred media URLs.
+- Video sources are deferred data-src with preload=none. Save-Data, 2g/3g, or reported downlink below 1.5 Mbps select poster-only mode. Explicit Load video opts in. Unknown connections keep standard playback, with an 8-second startup-readiness fallback. Offscreen and hidden-tab playback pauses.
+
+Verification executed:
+- tools/validate-critical.py: PASS for 24 pages, deferred assets, anchors, web-root boundaries, unchanged legal bodies and protected production files. Existing main content normalization permits only media-loading attributes and corrected ARC paths.
+- git diff --check: PASS.
+- Node VM syntax checks and mocked video loading cases: slow/save-data/reduced-motion made zero automatic source loads and loaded on explicit click; fast/unknown made one automatic load.
+- Browser: ARC image decoded successfully, screenshot captured. Robotics initially showed Load video with no currentSrc; explicit click produced readyState 4 and playing video. Navigating to chapter paused offscreen video. Reveals still pending below viewport, no horizontal overflow; browser error log empty.
+
+Limits:
+No numerical before/after frame-time benchmark was captured. These changes remove identified render and layout overhead; they do not establish a guarantee of zero dropped frames on every device. Network Information API is not universal; unknown connections use the bounded startup fallback. Low-bandwidth behavior does not remove intentional manual playback.
+No publishing or maintenance changes.

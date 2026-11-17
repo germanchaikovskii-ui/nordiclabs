@@ -22,6 +22,16 @@
       else link.removeAttribute('aria-current');
     });
   }
+  if (sharedReveal) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) updateNavigation(chapters.indexOf(entry.target));
+      });
+    }, {rootMargin:'-20% 0px -65% 0px', threshold:0});
+    chapters.forEach(chapter => observer.observe(chapter));
+    if (button) button.hidden = true;
+    return;
+  }
   let showAll = reduced.matches;
   let pending = false;
   const clamp = value => Math.max(0, Math.min(1, value));

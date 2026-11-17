@@ -23,9 +23,8 @@
         delay += 120;
       });
     }, {threshold: 0.08, rootMargin: '0px 0px -12% 0px'});
-    items.forEach(item => {
-      // Already-read content remains visible when switching animation modes.
-      if (item.getBoundingClientRect().bottom < 0) return;
+    const unread = items.filter(item => item.getBoundingClientRect().bottom >= 0);
+    unread.forEach(item => {
       item.classList.add('reveal-waiting');
       observer.observe(item);
     });

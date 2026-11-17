@@ -11,7 +11,7 @@ class Page(HTMLParser):
  def handle_starttag(self,tag,attrs):
   a=dict(attrs)
   if a.get('id'):self.ids.append(a['id'])
-  for key in ('href','src','poster'):
+  for key in ('href','src','data-src','poster'):
    if a.get(key):self.links.append(a[key])
 errors=[]
 pages={p:Page(p.read_text()) for p in WEB.rglob('*.html')}
@@ -23,6 +23,7 @@ for p,page in pages.items():
   target=(WEB/u.path.lstrip('/') if u.path.startswith('/') else p.parent/unquote(u.path)) if u.path else p
   target=target.resolve()
   if target.is_dir():target/= 'index.html'
+  if not target.is_relative_to(WEB):errors.append(f'Outside web root: {p.relative_to(ROOT)} -> {link}');continue
   if not target.exists():errors.append(f'Missing: {p.relative_to(ROOT)} -> {link}');continue
   if u.fragment and target in pages and unquote(u.fragment) not in pages[target].ids:errors.append(f'Missing anchor: {p.relative_to(ROOT)} -> {link}')
  text=p.read_text()
@@ -46,7 +47,10 @@ for p in pages:
  if p==WEB/'index.html' or 'critical' in p.relative_to(WEB).parts:continue
  rel=str(p.relative_to(ROOT));old=subprocess.check_output(['git','show',base+':'+rel],cwd=ROOT,text=True)
  before=re.search(r'<main\b.*?</main>',old,re.S);after=re.search(r'<main\b.*?</main>',p.read_text().replace('<option>Critical Infrastructure AI</option>', ''),re.S)
- if before and after and before[0]!=after[0]:errors.append('Existing main content changed: '+rel)
+ def normalize_markup(value):
+  value=value.replace('data-src=', 'src=').replace('preload="none"','preload="metadata"')
+  return re.sub(r'(?:\.\./)+assets/arc-engine/', 'ARC_ASSET/', value)
+ if before and after and normalize_markup(before[0])!=normalize_markup(after[0]):errors.append('Existing main content changed: '+rel)
 for path in ['critical/','critical/reference-solutions/','critical/pilot/']:
  assert (WEB/path/'index.html') in pages
 print(f'Checked {len(pages)} HTML pages; local links/assets/anchors; SVG parsing; 4-direction navigation; legal and production preservation.')
