@@ -38,6 +38,28 @@
   .home-health .home-panel-copy { margin: 0 7% 36px; width: 80%; }
 }
 
-/* Four directions: two spacious diagonal pairs, rather than four narrow columns. */
-.home-gateway-page{height:auto;min-height:100svh;display:block}.home-gateway{display:block}.home-panels{display:grid;grid-template-columns:1fr 1fr;overflow:hidden}.home-panel,.home-health{position:relative;inset:auto;display:block;width:108%;min-height:490px;height:auto;margin:0;padding:0;clip-path:polygon(0 0,100% 0,85.185185% 100%,0 100%)}.home-panel:nth-child(even){width:108%;margin-left:-8%;clip-path:polygon(14.814815% 0,100% 0,100% 100%,0 100%)}.home-panel-copy,.home-robotics .home-panel-copy,.home-health .home-panel-copy{position:absolute;left:7%;bottom:45px;width:72%;margin:0}.home-panel:nth-child(even) .home-panel-copy{left:19%;width:73%}.home-panel h2{font-size:clamp(32px,3.5vw,52px);margin-block:18px 22px}.home-critical h2{max-width:450px}.home-critical-subtitle{font-size:18px;line-height:1.35;color:#b8f4e7;margin-bottom:12px}.home-critical-description{font-size:14px;line-height:1.5;color:#d1e0e7;max-width:470px;margin-bottom:20px}.home-panel .home-panel-action{max-width:420px}.home-health .health-product:before{position:absolute;inset:-300px -100px -80px -80px}.home-title{padding-block:36px}.home-panel:after{background:linear-gradient(0deg,#03141ff5,transparent 120%)}
-@media(max-width:760px){.home-panels{display:block}.home-panel,.home-health,.home-panel:nth-child(even){width:100%;min-height:420px;margin:0;clip-path:none}.home-panel-copy,.home-health .home-panel-copy,.home-panel:nth-child(even) .home-panel-copy{left:7%;bottom:40px;width:86%;margin:0}.home-panel h2{font-size:38px}.home-critical{min-height:500px}.home-critical h2{font-size:38px}.home-critical-description{max-width:520px}.home-panel+.home-panel{border-top:1px solid #3a5c67}.home-title h1{font-size:38px}}
+/* Four directions share one continuous diagonal composition. */
+.home-gateway-page{height:auto;min-height:100svh;display:block}
+.home-gateway{display:block}
+.home-title{padding-block:36px}
+.home-panels{height:calc(100svh - 210px);min-height:560px}
+.home-panel,.home-health{position:absolute;inset:0 auto 0 0;display:block;width:29.5%;height:100%;margin:0;padding:0;clip-path:polygon(0 0,100% 0,69.491525% 100%,0 100%)}
+.home-robotics,.home-health{left:20.5%;width:34%;clip-path:polygon(26.470588% 0,100% 0,73.529412% 100%,0 100%)}
+.home-health{left:45.5%}
+.home-critical{left:70.5%;clip-path:polygon(30.508475% 0,100% 0,100% 100%,0 100%)}
+.home-panel-copy,.home-robotics .home-panel-copy,.home-health .home-panel-copy{position:absolute;left:12%;bottom:12%;width:65%;margin:0}
+.home-robotics .home-panel-copy,.home-health .home-panel-copy{left:25%;width:55%}
+.home-critical .home-panel-copy{left:32%;width:64%}
+.home-panel h2{font-size:clamp(27px,2.45vw,48px);margin:18px 0 24px;white-space:nowrap}
+.home-panel-number{font-size:clamp(9px,.75vw,12px);letter-spacing:.13em;white-space:nowrap}
+.home-panel-action{font-size:clamp(11px,.95vw,16px);min-height:48px;gap:8px}
+.home-panel:after{background:linear-gradient(0deg,#03141ff5,transparent 120%)}
+.home-health .health-product:before{position:absolute;inset:-100vh -100px -150px}
+@media(max-width:1000px) and (min-width:761px){.home-panel h2{font-size:clamp(20px,2.6vw,26px)}.home-panel-number{font-size:8px}.home-panel-action{font-size:10px;gap:4px}.home-panel-action span{font-size:22px}}
+@media(max-width:760px){
+.home-panels{height:auto;min-height:0}
+.home-panel,.home-health,.home-critical{position:relative;inset:auto;width:100%;height:380px;min-height:0;margin:0;padding:0;clip-path:none}
+.home-panel-copy,.home-robotics .home-panel-copy,.home-health .home-panel-copy,.home-critical .home-panel-copy{left:7%;bottom:40px;width:86%;margin:0}
+.home-panel h2{font-size:38px}.home-panel-number{font-size:10px}.home-panel-action{font-size:14px;max-width:290px}
+.home-panel+.home-panel{border-top:1px solid #3a5c67}.home-title h1{font-size:38px}
+}

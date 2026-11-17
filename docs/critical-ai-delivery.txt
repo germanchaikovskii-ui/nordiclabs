@@ -11,7 +11,7 @@ Routes:
 Preview home: http://127.0.0.1:8082/
 
 Implementation:
-Four homepage directions in two spacious diagonal pairs; fourth direction in shared desktop/mobile headers and footers on all 24 development pages. Contact topic added. All Critical AI contact links use critical@nordiclabs.tech; general contact remains info.
+Four homepage directions in one diagonal desktop/tablet row with matching short titles and aligned links; fourth direction in shared desktop/mobile headers and footers on all 24 development pages. Contact topic added. All Critical AI contact links use critical@nordiclabs.tech; general contact remains info.
 Landing: original-speed video with scene captions and dark backing; illustrative integration-logo strip; dependency map; engineering lifecycle; six solution areas; data center focus; industries; three engagement stages; business value and contact.
 Reference solutions: data center, utility assets and enterprise resilience examples; deployment choices; scoped deliverables and commercial discussion.
 Pilot: eight connected scroll stages from scope and dependencies through private deployment, signals, baseline, findings, resilience review and evaluation. Illustrative scope and written-agreement wording retained.

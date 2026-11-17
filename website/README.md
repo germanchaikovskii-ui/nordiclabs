@@ -63,7 +63,7 @@ New development routes:
 - `/critical/reference-solutions/` — illustrative data center, utility asset and enterprise service configurations.
 - `/critical/pilot/` — eight-step interactive pilot build, using the shared cable animation with new graphics and content.
 
-Homepage: four areas in two diagonal desktop/tablet pairs, stacked on mobile. Shared header/footer include Critical AI on all 24 development pages. Contact form includes Critical Infrastructure AI; mail drafts remain addressed to info@nordiclabs.tech. Legal body text is unchanged.
+Homepage: four equally weighted areas in one diagonal desktop/tablet row, stacked on mobile. Shared header/footer include Critical AI on all 24 development pages. Contact form includes Critical Infrastructure AI; mail drafts remain addressed to info@nordiclabs.tech. Legal body text is unchanged.
 
 Preview from this checkout: `ruby tools/preview-critical.rb`, then http://127.0.0.1:8082/. This uses only a loopback listener and disables caching for review. Keep maintenance hosting unchanged.
 
