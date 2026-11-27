@@ -1,5 +1,5 @@
 (() => {
-  const items = [...document.querySelectorAll(':is(.robotics-page, .nuclear-page, .conventional-page) .story-tasks li, .ref-stages li, .ref-cost-grid article, .nuclear-page .flow-party li, .nuclear-page .specialist-agents article, .nuclear-page .trace-chain li, .nuclear-page .execution-steps li')];
+  const items = [...document.querySelectorAll(':is(.robotics-page, .nuclear-page, .conventional-page, .assist-page) .story-tasks li, .assist-page .assist-flow-step, .ref-stages li, .ref-cost-grid article, .nuclear-page .flow-party li, .nuclear-page .specialist-agents article, .nuclear-page .trace-chain li, .nuclear-page .execution-steps li')];
   if (!items.length) return;
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   let observer;

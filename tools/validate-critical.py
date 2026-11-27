@@ -44,7 +44,7 @@ for rel in ['index.html','404.html','CNAME','arc-engine/index.html']:
  assert before==(ROOT/rel).read_bytes(),f'Protected production file changed: {rel}'
 # Existing service structure stays intact; approved copy edits may change text nodes.
 for p in pages:
- if p==WEB/'index.html' or 'critical' in p.relative_to(WEB).parts:continue
+ if p == WEB/'index.html' or p.relative_to(WEB).parts[0] in {'critical', 'a-ssist'}:continue
  rel=str(p.relative_to(ROOT));old=subprocess.check_output(['git','show',base+':'+rel],cwd=ROOT,text=True)
  before=re.search(r'<main\b.*?</main>',old,re.S);after=re.search(r'<main\b.*?</main>',p.read_text().replace('<option>Critical Infrastructure AI</option>', '').replace('<option>Critical Infrastructure</option>', ''),re.S)
  def normalize_markup(value):
@@ -52,7 +52,7 @@ for p in pages:
   value = re.sub(r'(?:\.\./)+assets/arc-engine/', 'ARC_ASSET/', value)
   return re.sub(r'>([^<>]*)<', '><', value)
  if before and after and normalize_markup(before[0])!=normalize_markup(after[0]):errors.append('Existing main content changed: '+rel)
-for path in ['critical/','critical/reference-solutions/','critical/pilot/']:
+for path in ['critical/','critical/reference-solutions/','critical/pilot/','a-ssist/']:
  assert (WEB/path/'index.html') in pages
 print(f'Checked {len(pages)} HTML pages; local links/assets/anchors; SVG parsing; 4-direction navigation; legal and production preservation.')
 if errors:print('\n'.join(errors));raise SystemExit(1)
