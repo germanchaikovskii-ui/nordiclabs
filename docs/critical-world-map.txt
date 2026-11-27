@@ -1,6 +1,0 @@
-Critical AI world map — 2026-11-17
-Placement: after project/pilot/reference hero, before Modern Infrastructure / Growing Complexity.
-Original SVG/CSS server nodes and circuit paths over Natural Earth land outlines. 28 representative global land locations, randomized ordering and nearby signal offsets. Blue new infrastructure -> red potential vulnerability -> green proposed connection. Progressive 31-second loop with clear/restart.
-No live event data, no claim of automatic fault repair. Geography source recorded in assets/critical/SOURCES.txt.
-Performance: about 59 KB uncompressed for outline, JS and CSS combined. No video, blur filters, per-frame layout reads or scroll handler. State update interval 120ms only while visible, unpaused and tab active; DOM writes only on state changes. CSS pulses limited to visible nodes. Reduced motion displays stable connected map without timer. Pause/resume control provided.
-Validation: 24-page static validator PASS; git diff --check PASS. Node VM simulation confirmed mixed states, all 28 stabilized, clear, restart, offscreen timer cancellation and reduced-motion static result. Browser confirmed desktop/mobile layout, no horizontal overflow at390px, pause/resume and mixed states, no console errors. Screenshot /tmp/critical-world-map.png. No publication.
