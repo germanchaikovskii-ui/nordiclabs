@@ -19,7 +19,7 @@
   if (!source) return;
   document.querySelectorAll('[data-pilot-contact]').forEach(link => {
     link.hidden = link.dataset.pilotContact !== source.department;
-    if (!link.hidden) link.innerHTML = 'Discuss Your Pilot <span aria-hidden="true">↗</span>';
+    if (!link.hidden) link.firstChild.textContent = 'Discuss Your Pilot ';
   });
   document.querySelectorAll('[data-pilot-email]').forEach(link => {
     link.hidden = link.dataset.pilotEmail !== source.department;
@@ -29,7 +29,7 @@
   back.textContent = '← ' + source.label;
   const reference = document.querySelector('[data-pilot-reference]');
   reference.href = new URL(source.path + 'reference-solutions/', root).href;
-  reference.innerHTML = 'Explore Reference Solutions <span aria-hidden="true">↗</span>';
+  reference.firstChild.textContent = 'Explore Reference Solutions ';
   const nav = document.querySelector('.navigation a[href="../../../' + source.department + '/"]');
   if (nav) nav.setAttribute('aria-current', 'location');
 })();
